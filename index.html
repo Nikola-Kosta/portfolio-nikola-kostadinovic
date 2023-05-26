@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="mailto:nikola.kostadinovic.122.22@ict.edu.rs">
-        <meta name="keywords" content="web design, web development, web development services, web design services, business, portfolio">
-        <meta name="copyright" content="Nikola Kostadinovic Portfolio">
-        <meta name="language" content="english">
-        <meta name="description" content="Hello! I am Nikola and I am web developer. I am offering variety of web development services. Check my portfolio!">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="mailto:nikola.kostadinovic.122.22@ict.edu.rs"/>
+        <meta name="keywords" content="web design, web development, web development services, web design services, business, portfolio"/>
+        <meta name="copyright" content="Nikola Kostadinovic Portfolio"/>
+        <meta name="language" content="english"/>
+        <meta name="description" content="Hello! I am Nikola and I am web developer. I am offering variety of web development services. Check my portfolio!"/>
         <title>Nikola Kostadinović | PORTFOLIO</title>
         <!-- CSS -->
-        
+        <link rel="stylesheet" href="style.css" type="text/css"/>
         <!-- FONT -->
         
         <!-- WEB ICONS -->
@@ -21,23 +21,79 @@
         <div id="wrapper">
             <header>
                 <div id="logo">
-                    <img src="" alt=""/>
+                    <img src="" alt=""/><!--ili da bude neki font?-->
                 </div>
                 <nav>
                     <ul>
                         <li><a href="#wrapper">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#box-container-upper">ABOUT</a></li>
+                        <li><a href="#box-container-lower">SKILLS</a></li>
+                        <li><a href="#box-container-lower">PROJECTS</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
                     </ul>
                 </nav>
             </header>
             <main>
-
+                <div id="intro">
+                    <div id="main-box-left">
+                        <img src="" alt=""/>
+                    </div>
+                    <div id="main-box-right">
+                        <h2>I am Nikola</h2>
+                        <p>and I am WEB DEVELOPER</p>
+                        <div id="button"><a href="#footer">CONTACT</a></div>
+                    </div>
+                </div>
+                <div id="box-container-upper">
+                    <div class="box">FAST</div>
+                    <div class="box">PROFESSIONAL</div>
+                    <div class="box">RELIABLE</div>
+                </div>
+                <div id="box-container-lower">
+                    <div class="box">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">SEO</div>
+                        <div class="skill">UX/UI</div>
+                    </div>
+                    <div class="box second">
+                        <div class="project-box">
+                            <img src="" alt=""/> <!-- projekat adv kanc - dodati sliku-->
+                        </div>
+                        <div class="project-box">
+                            <img src="" alt=""/> <!-- projekat portfolio - dodati sliku-->
+                        </div>
+                    </div>
+                </div>
             </main>
             <footer>
-
+                <div id="footer-left">
+                    <ul>
+                        <li><a href="#wrapper">HOME</a></li>
+                        <li><a href="#box-container-upper">ABOUT</a></li>
+                        <li><a href="#box-container-lower">SKILLS</a></li>
+                        <li><a href="#box-container-lower">PROJECTS</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div id="footer-right">
+                    <form id="contact-form"  method="GET" action="submit.php"  target="_self">
+                        <fieldset>
+                          <legend> CONTACT </legend>
+                          <label for="fname">First name:</label></br>
+                          <input type="text" id="fname" name="fname" placeholder="John"></br></br>
+                          <label for="lname">Last name:</label></br>
+                          <input type="text" id="lname" name="lname" placeholder="Doe"></br></br>
+                          <label for="email">Email:</label></br>
+                          <input type="email" id="email" name="email" placeholder="youremail@gmail.com"></br></br>
+                          <label for="tel">Phone number:</label></br>
+                          <input type="tel" id="tel" name="tel" placeholder="phone number"></br></br>
+                          <label for="message">Message:</label></br>
+                          <textarea id="message" name="message" placeholder="Enter your message here"></textarea></br></br>
+                          <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>
             </footer>
         </div>
     </body>

@@ -1,0 +1,102 @@
+$body-color: #101011;
+$wrap-color: #5a5a63;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    background-color: $body-color;
+    width: 100%;
+}
+#wrapper{
+    background-color: $wrap-color;
+    width: 85%;
+    margin: 0px auto;
+}
+header{
+    width: 100%;
+    @include flex;
+    justify-content: space-around;
+    #logo{
+        width: 15%;
+        height: 15%;
+        background-color: red;
+    }
+    nav{
+        width: 50%;
+        @include flex;
+        justify-content: end;
+        ul{
+            list-style-type: none;
+            li{
+                display: inline;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+main{
+    width: 100%;
+    #intro{
+        width: 100%;
+        margin: 30px 0px; 
+        @include flex;
+        justify-content: space-evenly;
+        #main-box-left{
+            width: 35%;
+            height: 300px;
+            background-color: yellow;
+        }
+        #main-box-right{
+            @extend #main-box-left;
+            width: 50%;
+        }
+    }
+    #box-container-upper{
+        width: 100%;
+        @include flex;
+        justify-content: space-evenly;
+        .box{
+            width: 30%;
+            height: 400px;
+            background-color: purple;
+            text-align: center;
+            @include flex;
+            justify-content: center;
+        }
+    }
+    #box-container-lower{
+        @extend #box-container-upper;
+        .box{
+            width: 45%;
+            margin: 30px 0;
+            @include flex;
+            flex-direction: column;
+            .skill{
+                @include flex;
+                width: 100%;
+                height: 50px;
+                text-align: left;
+                background-color: blue;
+            }
+        }
+        .second{
+            @include flex;
+            justify-content: space-around;
+            .project-box{
+                width: 80%;
+                height: 50px;
+                background-color: blue;
+            }
+        }
+    }
+}
+    
+
+

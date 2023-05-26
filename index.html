@@ -17,84 +17,132 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
 	    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet"/>
         <!-- WEB ICONS -->
-        
+        <script src="https://kit.fontawesome.com/7e3d12f964.js" crossorigin="anonymous"></script>
     </head> 
     <body>
         <div id="wrapper">
             <header>
                 <div id="logo">
-                    <a href="#wrapper"><p>N|K</p></a>
+                    <a href="#wrapper"><p>N|K</p></a><!-- naci entitet code -->
                 </div>
                 <nav>
                     <ul>
                         <li><a href="#wrapper">HOME</a></li>
-                        <li><a href="#box-container-upper">ABOUT</a></li>
-                        <li><a href="#box-container-lower">SKILLS</a></li>
+                        <li><a href="#box-container-upper-heading">SKILLS</a></li>
+                        <li><a href="#box-container-lower">ABOUT</a></li>
+                        
                         <li><a href="#box-container-lower">PROJECTS</a></li>
-                        <li><a href="#footer">CONTACT</a></li>
+                        <li><a href="#footer-upper">CONTACT</a></li>
                     </ul>
                 </nav>
             </header>
             <main>
                 <div id="intro">
                     <div id="main-box-left">
-                        <img src="" alt=""/>
+                        <img src="assets/img/profile.jpg" alt="face picture"/>
                     </div>
                     <div id="main-box-right">
                         <h2>I am Nikola</h2>
-                        <p>and I am <span class="web-red">WEB DEVELOPER</span></p>
-                        <div id="button"><a href="#footer">CONTACT</a></div>
+                        <p>and I am <span class="web-color">WEB DEVELOPER</span></p>
+                        <span id="button"><a href="#footer-upper">LET'S CONNECT</a></span>
                     </div>
                 </div>
+                <div id="box-container-upper-heading">
+                    <h2>WHAT I DO?</h2>
+                </div>
                 <div id="box-container-upper">
-                    <div class="box">FAST</div>
-                    <div class="box">PROFESSIONAL</div>
-                    <div class="box">RELIABLE</div>
+                    
+                    <div class="box">
+                        <i class="fa-regular fa-bolt"></i>
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum recusandae nisi voluptatibus</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-regular fa-bolt"></i>
+                        <h3>SEO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum recusandae nisi voluptatibus</p>
+                        
+                    </div>
+                    <div class="box">
+                        <i class="fa-regular fa-bolt"></i>
+                        <h3>FAST &amp; FRIENDLY SUPPORT</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum recusandae nisi voluptatibus</p>
+                    </div>
                 </div>
                 <div id="box-container-lower">
                     <div class="box">
-                        <div class="skill">HTML</div>
-                        <div class="skill">CSS</div>
-                        <div class="skill">SEO</div>
-                        <div class="skill">UX/UI</div>
+                        <h3>ABOUT</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit explicabo! Nemo quae unde beatae? Odit, cumque cum ex facilis, eius earum ad, labore odio repudiandae modi possimus neque ut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit explicabo! Nemo quae unde beatae? Odit, cumque cum ex facilis, eius earum ad, labore odio repudiandae modi possimus neque ut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit explicabo! Nemo quae unde beatae? Odit, cumque cum ex facilis, eius earum ad, labore odio repudiandae modi possimus neque ut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit explicabo! Nemo quae unde beatae? Odit, cumque cum ex facilis, eius earum ad, labore odio repudiandae modi possimus neque ut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit explicabo! Nemo quae unde beatae? Odit, cumque cum ex facilis, eius earum ad, labore odio repudiandae modi possimus neque ut!</p>
                     </div>
                     <div class="box second">
+                        <h3>PROJECTS</h3>
                         <div class="project-box">
-                            <img src="" alt=""/> <!-- projekat adv kanc - dodati sliku-->
+                            <img src="assets/img/lawyer-office.jpg" alt="lawyer-office project"/> <!-- projekat adv kanc - dodati sliku-->
                         </div>
                         <div class="project-box">
-                            <img src="" alt=""/> <!-- projekat portfolio - dodati sliku-->
+                            <img src="assets/img/lawyer-office.jpg" alt="lawyer-office project"/>  <!-- projekat portfolio - dodati sliku-->
                         </div>
                     </div>
                 </div>
             </main>
             <footer>
-                <div id="footer-left">
-                    <ul>
-                        <li><a href="#wrapper">HOME</a></li>
-                        <li><a href="#box-container-upper">ABOUT</a></li>
-                        <li><a href="#box-container-lower">SKILLS</a></li>
-                        <li><a href="#box-container-lower">PROJECTS</a></li>
-                        <li><a href="#footer">CONTACT</a></li>
-                    </ul>
+                <div id="footer-upper">
+                    <div id="contact-info">
+                        <h2>CONTACT INFORMATION</h2>
+                        <ul> 
+                            <li><address><i class="fa-solid fa-location-dot"></i>&nbsp; Vitanovačka 41, Beograd</address></li>
+                            <li><a href="mailto:advkostadinovic@gmail.com"><i class="fa-regular fa-envelope"></i>&nbsp; adv.kostadinovic@gmail.com</a></li>
+                            <li><i class="fa-sharp fa-solid fa-phone"></i>&nbsp; 069/44-54-525</li>
+                            <li><i class="fa-brands fa-whatsapp"></i>&nbsp; 069/44-54-525</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="footer-right">
-                    <form id="contact-form"  method="GET" action="submit.php"  target="_self">
-                        <fieldset>
-                          <legend> CONTACT </legend>
-                          <label for="fname">First name:</label></br>
-                          <input type="text" id="fname" name="fname" placeholder="John"></br></br>
-                          <label for="lname">Last name:</label></br>
-                          <input type="text" id="lname" name="lname" placeholder="Doe"></br></br>
-                          <label for="email">Email:</label></br>
-                          <input type="email" id="email" name="email" placeholder="youremail@gmail.com"></br></br>
-                          <label for="tel">Phone number:</label></br>
-                          <input type="tel" id="tel" name="tel" placeholder="phone number"></br></br>
-                          <label for="message">Message:</label></br>
-                          <textarea id="message" name="message" placeholder="Enter your message here"></textarea></br></br>
-                          <input type="submit" value="Submit">
-                        </fieldset>
-                    </form>
+                <div id="contact-form">
+                    <div id="contact-title">
+                        <h2>LET'S CONNECT</h2>
+                    </div>
+                    <form action="/action_page.php">
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="fname">Name</label>
+                          </div>
+                          <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="lname">Surname</label>
+                          </div>
+                          <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Enter your surname">
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                              <label for="lname">E-mail</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="email" id="email" name="email" placeholder="Enter your email address">
+                            </div>
+                          </div>
+                        
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="subject">Message</label>
+                          </div>
+                          <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Enter your message..."></textarea>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <input type="submit" value="Poslati">
+                        </div>
+                      </form>
+                </div>
+                </div>
+                <div id="footer-lower">
+                    <p>&copy; Nikola Kostadinović 122/22</p>
                 </div>
             </footer>
         </div>

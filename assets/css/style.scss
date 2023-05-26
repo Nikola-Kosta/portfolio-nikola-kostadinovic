@@ -1,11 +1,17 @@
 $body-color: #000000;
 $wrap-color: #000000;
-$common-red: #ff2800;
+$nav-bar-color: #161616;
+$text: #c7cbd4;
+$icons: #e31c25;
+$common-cell: #1c1c1c;
+$web-color: #bb000e;
+
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+    
 }
 
 @mixin flex{
@@ -16,23 +22,27 @@ $common-red: #ff2800;
 body{
     width: 100%;
     background-image: url("../img/background.jpg");
-    background-size:cover;
+    background-size: cover;
+    
 }
 #wrapper{
     background-color: $wrap-color;
     width: 80%;
     margin: 0px auto;
+    background-color: $wrap-color;
 }
 header{
-    width: 100%;
+    position: fixed;
+    background-color: $nav-bar-color;
+    top: 0;
+    width: 80%;
+    padding: 0.7rem 0;
     @include flex;
     #logo{
-        width: 15%;
-        height: 15%;
-        font-size: 80px;
+        font-size: 3rem;
         a{
             text-decoration: none;
-            color: $common-red;
+            color: $icons;
         }
     }
     nav{
@@ -43,100 +53,236 @@ header{
             list-style-type: none;
             li{
                 display: inline;
-                margin-left: 15px;
-                font-size: 30px;
+                margin-left: 2rem;
+                font-size: 1rem;
             }
         }
         a{
             text-decoration: none;
-            color: $common-red;
+            color: $web-color;
             &:hover{
-                color: white;
+                color: $text;
             }
             &:active{
-                color: $common-red;
+                color: $icons;
             }
         }
     }
 }
 main{
     width: 100%;
+    
+    padding-top: 5rem;
     #intro{
-        width: 100%;
-        margin: 30px 0px; 
         @include flex;
+        width: 100%;
+        color: $text;
+        padding: 2rem 0;
         justify-content: space-evenly;
         #main-box-left{
-            width: 35%;
-            height: 300px;
-            background-color: yellow;
+            width: 25%;
+            img{
+                width: 100%;
+            }
         }
         #main-box-right{
             @extend #main-box-left;
             width: 55%;
             h2{
-                font-size: 50px;
+                font-size: 4rem;
+
             }
             p{
-                font-size: 30px;
-                .web-red{
-                    color:$common-red;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                .web-color{
+                    color:$web-color;
+                }
+            }
+            #button{
+                background-color: $icons;
+                font-size: 1rem;
+                padding: 0.3rem;
+                border-radius: 0.5rem;
+                a{
+                    text-decoration: none;
+                    color: $text;
                 }
             }
         }
     }
-    #box-container-upper{
+    #box-container-upper-heading{   
+        scroll-margin-top: 6.2rem;
         width: 100%;
-        @include flex;
-        justify-content: space-evenly;
-        .box{
-            width: 29%;
-            height: 400px;
-            background-color: purple;
-            text-align: center;
-            @include flex;
-            justify-content: center;
-        }
+        color: $text;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
-    #box-container-lower{
-        @extend #box-container-upper;
+    #box-container-upper{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        color: $icons;
         .box{
-            width: 45%;
-            margin: 30px 0;
-            @include flex;
-            flex-direction: column;
-            .skill{
-                @include flex;
-                width: 100%;
-                height: 50px;
-                text-align: left;
-                background-color: blue;
+            width: 27%;
+            padding: 1rem;
+            background-color: $common-cell;
+            border-radius: 1rem;
+            font-size: 1rem;
+            
+            i{
+                font-size: 4rem;
+                color: $icons;
+            }
+            h3{
+                color: $text;
+                margin-top: 1rem;
+            }
+            p{
+                color: $text;
+                margin-top: 1rem;
             }
         }
+        
+    }
+    #box-container-lower{
+        scroll-margin-top: 4.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        .box{
+            display: block;
+            h3{
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+                margin-top: 1rem;
+            }
+            background-color: $common-cell;
+            color: $text;
+            width: 43%;
+            padding: 1rem;
+            border-radius: 1rem;
+            font-size: 1rem;
+            margin: 1.5rem 0rem;
+            flex-direction: column;
+            
+        }
         .second{
-            @include flex;
-            justify-content: space-around;
+            display: block;
+            text-align: center;
             .project-box{
-                width: 80%;
-                height: 50px;
-                background-color: blue;
+                width: 100% auto;
+                margin: 1rem 0.2rem;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
 }
 footer{
-    width: 100%;
-    @include flex;
+    display: flex;
     justify-content: space-around;
-    #footer-left{
-        ul{
-            text-align: center;
-            li{
-                display: block;
+    width: 100%;
+    text-align: center;
+    color: $text;
+    #footer-upper{
+        display: flex;
+        justify-content: space-between;
+        #contact-info {
+            flex: 1;
+            width: 40%;
+            padding: 1em;
+            border-radius: 0.5em;
+            ul{
+                list-style-type: none;
+                li{
+                    list-style: none;
+                    color: $text;
+                    font-size: 1em;
+                    a{
+                        text-decoration: none;
+                        color: $text;
+                        &:hover{
+                            color: $icons;
+                        }
+                        &:active{
+                            color: $text;
+                        }
+                    }
+                }
             }
         }
+    }    
+        #contact-form {
+            flex: 1;
+            width: 40%;
+            border-radius: 0.5rem;
+        }
+        
+        #contact-title {
+            color: #fff;
+            text-align: center;
+        }
+        
+        #contact-right form {
+            color: #fff;
+            text-align: center;
+        }
+        
+        #contact-right input[type=text],
+        input[type=email],
+        select,
+        textarea {
+            width: 50%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            resize: none;
+        }
+        #contact-right input[type=submit] {
+            background-color: #fff;
+            color: #0b173d;
+            padding: 12px 50px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 20px 23px 0px 0px;
+        }
+        
+        
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 1em;
+        }
+        
+        #contact-right textarea {
+            height: 20%;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 20px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     }
-}
+    #footer-lower{
+        p{
+            color: $text;
+            font-size: 1.5em;
+        }
+    }
+
     
 
 

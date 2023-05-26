@@ -97,6 +97,19 @@ main{
         }
     }
 }
+footer{
+    width: 100%;
+    @include flex;
+    justify-content: space-around;
+    #footer-left{
+        ul{
+            text-align: center;
+            li{
+                display: block;
+            }
+        }
+    }
+}
     
 
 

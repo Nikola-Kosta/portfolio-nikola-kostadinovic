@@ -104,4 +104,18 @@ main #box-container-lower .second .project-box {
   width: 80%;
   height: 50px;
   background-color: blue;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+footer #footer-left ul {
+  text-align: center;
+}
+footer #footer-left ul li {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

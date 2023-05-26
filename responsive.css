@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    width: 70%;
+  }
+  header nav ul {
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 411px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  header nav ul li {
+    display: block;
+    margin: 5px 0px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

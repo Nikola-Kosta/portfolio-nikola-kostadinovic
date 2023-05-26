@@ -3,6 +3,7 @@ $wrap-color: #000000;
 $nav-bar-color: #161616;
 $text: #c7cbd4;
 $icons: #e31c25;
+$snow: #ffffff;
 $common-cell: #1c1c1c;
 $web-color: #bb000e;
 
@@ -21,7 +22,7 @@ $web-color: #bb000e;
 }
 body{
     width: 100%;
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background-image.jpg");
     background-size: cover;
     
 }
@@ -39,6 +40,7 @@ header{
     padding: 0.7rem 0;
     @include flex;
     #logo{
+        
         font-size: 3rem;
         a{
             text-decoration: none;
@@ -80,6 +82,7 @@ main{
         padding: 2rem 0;
         justify-content: space-evenly;
         #main-box-left{
+            
             width: 25%;
             img{
                 width: 100%;
@@ -89,11 +92,11 @@ main{
             @extend #main-box-left;
             width: 55%;
             h2{
-                font-size: 4rem;
+                font-size: 5rem;
 
             }
             p{
-                font-size: 2rem;
+                font-size: 3rem;
                 margin-bottom: 1rem;
                 .web-color{
                     color:$web-color;
@@ -130,7 +133,7 @@ main{
             background-color: $common-cell;
             border-radius: 1rem;
             font-size: 1rem;
-            
+            box-shadow: 0.033rem 0.01rem 0.1rem $snow;
             i{
                 font-size: 4rem;
                 color: $icons;
@@ -161,6 +164,7 @@ main{
                 margin-top: 1rem;
             }
             background-color: $common-cell;
+            box-shadow: 0.033rem 0.02rem 0.1rem $snow;
             color: $text;
             width: 43%;
             padding: 1rem;
@@ -218,6 +222,8 @@ footer{
         }
     }    
         #contact-form {
+            
+            background-color: red;
             flex: 1;
             width: 40%;
             border-radius: 0.5rem;
@@ -245,11 +251,9 @@ footer{
         #contact-right input[type=submit] {
             background-color: #fff;
             color: #0b173d;
-            padding: 12px 50px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            margin: 20px 23px 0px 0px;
         }
         
         
@@ -265,9 +269,9 @@ footer{
         }
         
         .col-75 {
-            float: left;
-            width: 75%;
-            margin-top: 20px;
+            display:flex;
+            width: 45%;
+            margin-top: 2rem 0rem;
         }
         
         .row:after {

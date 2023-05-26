@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background-image.jpg");
   background-size: cover;
 }
 
@@ -84,10 +84,10 @@ main #intro #main-box-right {
   width: 55%;
 }
 main #intro #main-box-right h2 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 main #intro #main-box-right p {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 main #intro #main-box-right p .web-color {
@@ -123,6 +123,7 @@ main #box-container-upper .box {
   background-color: #1c1c1c;
   border-radius: 1rem;
   font-size: 1rem;
+  box-shadow: 0.033rem 0.01rem 0.1rem #ffffff;
 }
 main #box-container-upper .box i {
   font-size: 4rem;
@@ -145,6 +146,7 @@ main #box-container-lower {
 main #box-container-lower .box {
   display: block;
   background-color: #1c1c1c;
+  box-shadow: 0.033rem 0.02rem 0.1rem #ffffff;
   color: #c7cbd4;
   width: 43%;
   padding: 1rem;
@@ -208,6 +210,7 @@ footer #footer-upper #contact-info ul li a:active {
   color: #c7cbd4;
 }
 footer #contact-form {
+  background-color: red;
   flex: 1;
   width: 40%;
   border-radius: 0.5rem;
@@ -232,11 +235,9 @@ footer textarea {
 footer #contact-right input[type=submit] {
   background-color: #fff;
   color: #0b173d;
-  padding: 12px 50px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin: 20px 23px 0px 0px;
 }
 footer .col-25 {
   float: left;
@@ -247,9 +248,9 @@ footer #contact-right textarea {
   height: 20%;
 }
 footer .col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 20px;
+  display: flex;
+  width: 45%;
+  margin-top: 2rem 0rem;
 }
 footer .row:after {
   content: "";

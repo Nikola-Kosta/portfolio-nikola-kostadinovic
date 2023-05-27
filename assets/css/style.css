@@ -172,6 +172,8 @@ main #box-container-lower .second .project-box {
 }
 main #box-container-lower .second .project-box img {
   width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0.032rem 0.01rem 0.1rem #ffffff;
 }
 
 footer {
@@ -188,16 +190,18 @@ footer #footer-upper {
 footer #footer-upper #contact-info {
   flex: 1;
   width: 40%;
-  padding: 1em;
-  border-radius: 0.5em;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 footer #footer-upper #contact-info ul {
   list-style-type: none;
+  text-align: left;
 }
 footer #footer-upper #contact-info ul li {
   list-style: none;
   color: #c7cbd4;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 footer #footer-upper #contact-info ul li a {
   text-decoration: none;
@@ -209,57 +213,7 @@ footer #footer-upper #contact-info ul li a:hover {
 footer #footer-upper #contact-info ul li a:active {
   color: #c7cbd4;
 }
-footer #contact-form {
-  background-color: red;
-  flex: 1;
-  width: 40%;
-  border-radius: 0.5rem;
-}
-footer #contact-title {
-  color: #fff;
-  text-align: center;
-}
-footer #contact-right form {
-  color: #fff;
-  text-align: center;
-}
-footer #contact-right input[type=text],
-footer input[type=email],
-footer select,
-footer textarea {
-  width: 50%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  resize: none;
-}
-footer #contact-right input[type=submit] {
-  background-color: #fff;
-  color: #0b173d;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-footer .col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 1em;
-}
-footer S #contact-right textarea {
-  height: 20%;
-}
-footer .col-75 {
-  display: flex;
-  width: 45%;
-  margin-top: 2rem 0rem;
-}
-footer .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#footer-lower p {
+footer #contact-form #contact-title {
   color: #c7cbd4;
-  font-size: 1.5em;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */

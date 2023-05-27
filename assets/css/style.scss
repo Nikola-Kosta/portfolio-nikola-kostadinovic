@@ -182,6 +182,8 @@ main{
                 margin: 1rem 0.2rem;
                 img{
                     width: 100%;
+                    border-radius: 1rem;
+                    box-shadow: 0.032rem 0.01rem 0.1rem $snow;
                 }
             }
         }
@@ -199,14 +201,16 @@ footer{
         #contact-info {
             flex: 1;
             width: 40%;
-            padding: 1em;
-            border-radius: 0.5em;
+            padding: 1rem;
+            border-radius: 0.5rem;
             ul{
                 list-style-type: none;
+                text-align: left;
                 li{
                     list-style: none;
                     color: $text;
-                    font-size: 1em;
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
                     a{
                         text-decoration: none;
                         color: $text;
@@ -219,75 +223,12 @@ footer{
                     }
                 }
             }
-        }
-    }    
-        #contact-form {
-            
-            background-color: red;
-            flex: 1;
-            width: 40%;
-            border-radius: 0.5rem;
-        }
-        
+        } 
+    } 
+    #contact-form {
         #contact-title {
-            color: #fff;
-            text-align: center;
-        }
-        
-        #contact-right form {
-            color: #fff;
-            text-align: center;
-        }
-        
-        #contact-right input[type=text],
-        input[type=email],
-        select,
-        textarea {
-            width: 50%;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            resize: none;
-        }
-        #contact-right input[type=submit] {
-            background-color: #fff;
-            color: #0b173d;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        
-        
-        
-        .col-25 {
-            float: left;
-            width: 25%;
-            margin-top: 1em;
-        }
-        S
-        #contact-right textarea {
-            height: 20%;
-        }
-        
-        .col-75 {
-            display:flex;
-            width: 45%;
-            margin-top: 2rem 0rem;
-        }
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    }
-    #footer-lower{
-        p{
             color: $text;
-            font-size: 1.5em;
             text-align: center;
         }
-    }
-
-    
-
-
+    } 
+}

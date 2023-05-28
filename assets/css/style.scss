@@ -112,6 +112,27 @@ main{
                     color: $text;
                 }
             }
+            .social{
+                @include flex;
+                opacity: 0.6;
+                justify-content: start;
+                margin-top: 1rem;
+                .social-network{
+                    a {
+                        margin-left: 0.5rem;
+                        i{
+                            font-size: 2rem;
+                        }
+                        color: $text;
+                        &:hover{
+                            color: $icons;
+                        }
+                        &:active{
+                            color: $text;
+                        }
+                    }
+                }
+            }
         }
     }
     #box-container-upper-heading{   
@@ -191,16 +212,17 @@ main{
 }
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     text-align: center;
     color: $text;
-    #footer-upper{
+    #footer-left{
+        width: 30%;
         display: flex;
         justify-content: space-between;
         #contact-info {
             flex: 1;
-            width: 40%;
+            width: 35%;
             padding: 1rem;
             border-radius: 0.5rem;
             ul{
@@ -226,9 +248,46 @@ footer{
         } 
     } 
     #contact-form {
+        width: 20%;
         #contact-title {
             color: $text;
             text-align: center;
         }
-    } 
+        form{
+            input[type=text]{
+                height: 2rem;
+            }
+            input[textarea]{
+                height: 2rem;
+            }
+            input[type=email]{
+                height: 2rem;
+            }
+            .row{
+                display: flex;
+                text-align: right;
+                margin-top: 0.5rem;
+                .col-25{
+                    width: 40%;
+                }
+                .col-75{
+                    width: 60%;
+                }
+                
+            }
+            #submit-button{
+                margin: 0.5rem auto;
+            }
+        }
+    }
+    #footer-right{
+        width: 25%;
+        color: $text;
+        #requested{
+            font-size: 2.3rem;
+            i{
+                color: $icons;
+            }
+        }
+    }
 }

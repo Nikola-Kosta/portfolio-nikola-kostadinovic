@@ -103,6 +103,27 @@ main #intro #main-box-right #button a {
   text-decoration: none;
   color: #c7cbd4;
 }
+main #intro #main-box-right .social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.6;
+  justify-content: start;
+  margin-top: 1rem;
+}
+main #intro #main-box-right .social .social-network a {
+  margin-left: 0.5rem;
+  color: #c7cbd4;
+}
+main #intro #main-box-right .social .social-network a i {
+  font-size: 2rem;
+}
+main #intro #main-box-right .social .social-network a:hover {
+  color: #e31c25;
+}
+main #intro #main-box-right .social .social-network a:active {
+  color: #c7cbd4;
+}
 main #box-container-upper-heading {
   scroll-margin-top: 6.2rem;
   width: 100%;
@@ -178,42 +199,79 @@ main #box-container-lower .second .project-box img {
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   text-align: center;
   color: #c7cbd4;
 }
-footer #footer-upper {
+footer #footer-left {
+  width: 30%;
   display: flex;
   justify-content: space-between;
 }
-footer #footer-upper #contact-info {
+footer #footer-left #contact-info {
   flex: 1;
-  width: 40%;
+  width: 35%;
   padding: 1rem;
   border-radius: 0.5rem;
 }
-footer #footer-upper #contact-info ul {
+footer #footer-left #contact-info ul {
   list-style-type: none;
   text-align: left;
 }
-footer #footer-upper #contact-info ul li {
+footer #footer-left #contact-info ul li {
   list-style: none;
   color: #c7cbd4;
   font-size: 1rem;
   margin-top: 0.5rem;
 }
-footer #footer-upper #contact-info ul li a {
+footer #footer-left #contact-info ul li a {
   text-decoration: none;
   color: #c7cbd4;
 }
-footer #footer-upper #contact-info ul li a:hover {
+footer #footer-left #contact-info ul li a:hover {
   color: #e31c25;
 }
-footer #footer-upper #contact-info ul li a:active {
+footer #footer-left #contact-info ul li a:active {
   color: #c7cbd4;
+}
+footer #contact-form {
+  width: 20%;
 }
 footer #contact-form #contact-title {
   color: #c7cbd4;
   text-align: center;
+}
+footer #contact-form form input[type=text] {
+  height: 2rem;
+}
+footer #contact-form form input[textarea] {
+  height: 2rem;
+}
+footer #contact-form form input[type=email] {
+  height: 2rem;
+}
+footer #contact-form form .row {
+  display: flex;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+footer #contact-form form .row .col-25 {
+  width: 40%;
+}
+footer #contact-form form .row .col-75 {
+  width: 60%;
+}
+footer #contact-form form #submit-button {
+  margin: 0.5rem auto;
+}
+footer #footer-right {
+  width: 25%;
+  color: #c7cbd4;
+}
+footer #footer-right #requested {
+  font-size: 2.3rem;
+}
+footer #footer-right #requested i {
+  color: #e31c25;
 }/*# sourceMappingURL=style.css.map */

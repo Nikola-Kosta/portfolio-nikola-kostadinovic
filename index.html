@@ -30,7 +30,6 @@
                         <li><a href="#wrapper">HOME</a></li>
                         <li><a href="#box-container-upper-heading">SKILLS</a></li>
                         <li><a href="#box-container-lower">ABOUT</a></li>
-                        
                         <li><a href="#box-container-lower">PROJECTS</a></li>
                         <li><a href="#footer-upper">CONTACT</a></li>
                     </ul>
@@ -42,9 +41,22 @@
                         <img src="assets/img/profile.jpg" alt="face picture"/>
                     </div>
                     <div id="main-box-right">
-                        <h2>I am Nikola</h2>
-                        <p>and I am <span class="web-color">WEB DEVELOPER</span></p>
-                        <span id="button"><a href="#footer-upper">LET'S CONNECT</a></span>
+                        <div>
+                            <h2>I am Nikola</h2>
+                            <p>and I am <span class="web-color">WEB DEVELOPER</span></p>
+                            <span id="button"><a href="#footer-upper">LET'S CONNECT</a></span>
+                        </div>
+                        <div class="social">
+                            <div class="social-network">
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="social-network">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                            </div>
+                            <div class="social-network">
+                                <a href="https://rs.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="box-container-upper-heading">
@@ -60,7 +72,7 @@
                     <div class="box">
                         <i class="fa-solid fa-gears"></i>
                         <h3>SEO</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum recusandae nisi voluptatibus</p>
+                        <p>By using Search Engine Optimization, we will make the site the first choice of your target users</p>
                         
                     </div>
                     <div class="box">
@@ -86,7 +98,7 @@
                 </div>
             </main>
             <footer>
-                <div id="footer-upper">
+                <div id="footer-left">
                     <div id="contact-info">
                         <h2>CONTACT INFORMATION</h2>
                         <ul> 
@@ -98,52 +110,58 @@
                     </div>
                 </div>
                 <div id="contact-form">
-                    <div id="contact-title">
-                        <h2>LET'S CONNECT</h2>
-                    </div>
-                    <form action="/action_page.php">
-                        <div class="row">
-                          <div class="col-25">
-                            <label for="fname">Name</label>
-                          </div>
-                          <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Enter your name">
-                          </div>
+                    
+                        <div id="contact-title">
+                            <h2>LET'S CONNECT</h2>
                         </div>
-                        <div class="row">
-                          <div class="col-25">
-                            <label for="lname">Surname</label>
-                          </div>
-                          <div class="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Enter your surname">
-                          </div>
-                        </div>
-                        <div class="row">
+                        <form action="/action_page.php">
+                            <div class="row">
                             <div class="col-25">
-                              <label for="lname">E-mail</label>
+                                <label for="fname">Name</label>
                             </div>
                             <div class="col-75">
-                              <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                <input type="text" id="fname" name="firstname" placeholder="Enter your name">
                             </div>
-                          </div>
-                        
-                        <div class="row">
-                          <div class="col-25">
-                            <label for="subject">Message</label>
-                          </div>
-                          <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Enter your message..."></textarea>
-                          </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Surname</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Enter your surname">
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                <label for="lname">E-mail</label>
+                                </div>
+                                <div class="col-75">
+                                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Message</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Enter your message..."></textarea>
+                            </div>
+                            </div>
+                            <div id="submit-button">
+                            <input type="submit" value="SEND">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="footer-right">
+                        <div id="requested">
+                            <a href="sitemap.xml"><i class="fa-solid fa-sitemap"></i></a>
+                            <a href="assets/css/style.scss"><i class="fa-brands fa-sass"></i></a>
                         </div>
-                        <div class="row">
-                          <input type="submit" value="SEND">
-                        </div>
-                      </form>
+                        <p>&copy; Nikola Kostadinović 122/22</p>
                     </div>
                 </div>
-                <div id="footer-lower">
-                    <p>&copy; Nikola Kostadinović 122/22</p>
-                </div>
+                
             </footer>
         </div>
     </body>

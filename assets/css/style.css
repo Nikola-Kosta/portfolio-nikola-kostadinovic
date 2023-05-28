@@ -95,9 +95,18 @@ main #intro #main-box-right p .web-color {
 }
 main #intro #main-box-right #button {
   background-color: #e31c25;
+  width: 100%;
   font-size: 1rem;
   padding: 0.3rem;
   border-radius: 0.5rem;
+}
+main #intro #main-box-right #button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+main #intro #main-box-right #button:active {
+  background-color: #e31c25;
+  color: #c7cbd4;
 }
 main #intro #main-box-right #button a {
   text-decoration: none;
@@ -204,25 +213,25 @@ main #box-container-lower .second .project-box img {
 
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   text-align: center;
+  align-items: center;
   color: #c7cbd4;
 }
 footer #footer-left {
   width: 30%;
   display: flex;
-  justify-content: space-between;
 }
 footer #footer-left #contact-info {
   flex: 1;
-  width: 35%;
-  padding: 1rem;
+  width: 30%;
   border-radius: 0.5rem;
 }
 footer #footer-left #contact-info ul {
   list-style-type: none;
   text-align: left;
+  margin-top: 1rem;
 }
 footer #footer-left #contact-info ul li {
   list-style: none;
@@ -241,37 +250,60 @@ footer #footer-left #contact-info ul li a:active {
   color: #c7cbd4;
 }
 footer #contact-form {
-  width: 20%;
+  width: 30%;
 }
 footer #contact-form #contact-title {
   color: #c7cbd4;
   text-align: center;
 }
+footer #contact-form form {
+  flex: 1;
+}
 footer #contact-form form input[type=text] {
-  height: 2rem;
+  height: 1.5rem;
 }
 footer #contact-form form input[textarea] {
-  height: 2rem;
+  height: 1.5rem;
 }
 footer #contact-form form input[type=email] {
-  height: 2rem;
+  height: 1.5rem;
 }
 footer #contact-form form .row {
   display: flex;
-  text-align: right;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 footer #contact-form form .row .col-25 {
-  width: 40%;
+  flex: 1;
+  width: 30%;
+  margin: 0.5rem 0rem 0 0;
+  justify-content: right;
 }
 footer #contact-form form .row .col-75 {
-  width: 60%;
+  flex: 1;
+  width: 40%;
+  margin: 0.5rem 1rem 0 0;
+  justify-content: left;
 }
 footer #contact-form form #submit-button {
   margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+footer #contact-form form #submit-button input[type=submit] {
+  background-color: #1e1e1e;
+  color: #c7cbd4;
+  width: 30%;
+}
+footer #contact-form form #submit-button input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #161616;
 }
 footer #footer-right {
-  width: 25%;
+  display: flex;
+  flex: 1;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #c7cbd4;
 }
 footer #footer-right #requested {
@@ -279,4 +311,7 @@ footer #footer-right #requested {
 }
 footer #footer-right #requested i {
   color: #e31c25;
+}
+footer #footer-right p {
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */

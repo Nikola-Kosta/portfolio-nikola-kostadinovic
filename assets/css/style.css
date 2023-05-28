@@ -146,6 +146,10 @@ main #box-container-upper .box {
   font-size: 1rem;
   box-shadow: 0.033rem 0.01rem 0.1rem #ffffff;
 }
+main #box-container-upper .box .seo-class {
+  color: #e31c25;
+  font-size: 1.3rem;
+}
 main #box-container-upper .box i {
   font-size: 4rem;
   color: #e31c25;
@@ -153,6 +157,7 @@ main #box-container-upper .box i {
 main #box-container-upper .box h3 {
   color: #c7cbd4;
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 main #box-container-upper .box p {
   color: #c7cbd4;

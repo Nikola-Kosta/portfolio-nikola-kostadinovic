@@ -62,6 +62,7 @@ header{
         a{
             text-decoration: none;
             color: $web-color;
+            padding: 0.5rem;
             &:hover{
                 color: $text;
             }
@@ -123,7 +124,6 @@ main{
             }
             .social{
                 @include flex;
-                opacity: 0.6;
                 justify-content: start;
                 margin-top: 1rem;
                 .social-network{
@@ -227,28 +227,29 @@ main{
 footer{
     display: flex;
     width: 100%;
-    text-align: center;
+    justify-content: space-evenly;
     align-items: center;
     color: $text;
     #footer-left{
-        
-    justify-content: right;
-        width: 30%;
         display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-flow: column wrap;
         #contact-info {
-            flex: 1;
-            width: 30%; 
-            border-radius: 0.5rem;
+            display: flex;
+            flex: 1; 
             ul{
-                
+                .table-h{
+                    font-size: 1.5rem;
+                }
                 list-style-type: none;
-                text-align: left;
                 margin-top: 1rem;
                 li{
                     list-style: none;
                     color: $text;
                     font-size: 1rem;
                     margin-top: 0.5rem;
+                    
                     a{
                         text-decoration: none;
                         color: $text;
@@ -264,18 +265,21 @@ footer{
         } 
     } 
     #contact-form {
-        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        flex-flow: column wrap;
         #contact-title {
             color: $text;
             text-align: center;
         }
         form{
-            flex: 1;
             input[type=text]{
                 height: 1.5rem;
             }
             input[textarea]{
                 height: 1.5rem;
+                resize: none;
             }
             input[type=email]{
                 height: 1.5rem;
@@ -287,24 +291,22 @@ footer{
                     @include flex;
                     justify-content: right;
                     flex: 1;
-                    width: 30%;
                     margin: 0.5rem 2rem 0 0;
                 }
                 .col-75{
                     @include flex;
-                    justify-content: left;
                     flex: 1;
-                    width: 40%;
+                    justify-content: left;
                     margin: 0 2rem 0 0;
                 }
             }
             .submit-button{
                 margin: 1rem auto;
                 width: 100%;
+                text-align: center;
                 input[type=submit]{
                     background-color: #1e1e1e;
                     color: $text;
-                    
                     &:hover{
                         background-color: $snow;
                         color: #161616;
@@ -317,10 +319,7 @@ footer{
     }
     #footer-right{
         display: flex;
-        flex: 1;
-        width: 30%;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         color: $text;
         #requested{

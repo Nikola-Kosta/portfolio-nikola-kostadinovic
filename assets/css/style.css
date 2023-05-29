@@ -101,7 +101,7 @@ main #intro #main-box-right #button {
   border-radius: 0.5rem;
 }
 main #intro #main-box-right #button:hover {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   color: #000000;
 }
 main #intro #main-box-right #button:active {
@@ -117,22 +117,21 @@ main #intro #main-box-right .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  opacity: 0.6;
   justify-content: start;
   margin-top: 1rem;
 }
 main #intro #main-box-right .social .social-network a {
   margin-left: 0.5rem;
-  color: #c7cbd4;
 }
 main #intro #main-box-right .social .social-network a i {
   font-size: 2rem;
+  color: #343333;
 }
 main #intro #main-box-right .social .social-network a:hover {
   color: #e31c25;
 }
 main #intro #main-box-right .social .social-network a:active {
-  color: #c7cbd4;
+  color: #343333;
 }
 main #box-container-upper-heading {
   scroll-margin-top: 6.2rem;
@@ -154,7 +153,7 @@ main #box-container-upper .box {
   background-color: #1c1c1c;
   border-radius: 1rem;
   font-size: 1rem;
-  box-shadow: 0.033rem 0.01rem 0.1rem #ffffff;
+  box-shadow: 0.033rem 0.01rem 0.1rem #f1f1f1;
 }
 main #box-container-upper .box .seo-class {
   color: #e31c25;
@@ -182,7 +181,7 @@ main #box-container-lower {
 main #box-container-lower .box {
   display: block;
   background-color: #1c1c1c;
-  box-shadow: 0.033rem 0.02rem 0.1rem #ffffff;
+  box-shadow: 0.033rem 0.02rem 0.1rem #f1f1f1;
   color: #c7cbd4;
   width: 43%;
   padding: 1rem;
@@ -209,7 +208,7 @@ main #box-container-lower .second .project-box {
 main #box-container-lower .second .project-box img {
   width: 100%;
   border-radius: 1rem;
-  box-shadow: 0.032rem 0.01rem 0.1rem #ffffff;
+  box-shadow: 0.032rem 0.01rem 0.1rem #f1f1f1;
 }
 main #box-container-lower .skills {
   display: flex;
@@ -349,7 +348,7 @@ footer #contact-form form .submit-button input[type=submit] {
   color: #c7cbd4;
 }
 footer #contact-form form .submit-button input[type=submit]:hover {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   color: #161616;
 }
 footer #footer-right {

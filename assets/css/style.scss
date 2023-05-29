@@ -3,10 +3,12 @@ $wrap-color: #000000;
 $nav-bar-color: #161616;
 $text: #c7cbd4;
 $icons: #e31c25;
-$snow: #ffffff;
+$social-icons: #343333;
+$snow: #f1f1f1;
 $common-cell: #1c1c1c;
 $web-color: #bb000e;
 $bar-color: #282828;
+
 
 *{
     margin: 0px;
@@ -124,21 +126,21 @@ main{
             }
             .social{
                 @include flex;
-                opacity: 0.6;
                 justify-content: start;
                 margin-top: 1rem;
                 .social-network{
                     a {
                         margin-left: 0.5rem;
+                        
                         i{
                             font-size: 2rem;
+                            color:$social-icons;
                         }
-                        color: $text;
                         &:hover{
                             color: $icons;
                         }
                         &:active{
-                            color: $text;
+                            color: $social-icons;
                         }
                     }
                 }

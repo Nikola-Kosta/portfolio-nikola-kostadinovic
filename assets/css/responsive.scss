@@ -1,6 +1,7 @@
 @media screen and (max-width: 992px){
     header{
         flex-direction: column;
+        padding: 0.4rem 0;
         #logo{
             font-size: 2rem;
         }
@@ -13,7 +14,6 @@
                     width: 30%;
                 }
             #main-box-right{
-                margin-top: 0rem;
                 h2{
                     font-size: 4rem;
                 }
@@ -78,7 +78,7 @@
                     img{
                         width: 100%;
                         border-radius: 0.8rem;
-                        height: 140%;
+                        height: 130%;
                     }
                 }
             }
@@ -160,10 +160,12 @@
             }    
         }
         #footer-right{
-            
-            margin-top: 2rem;
+            margin-top: 2.2rem;
             #requested{
                 font-size: 2rem;
+            }
+            i{
+                font-size: 1.7rem;
             }
             p{
                 margin-top: 1rem;
@@ -171,15 +173,186 @@
         }
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 802px){
     header{
         flex-direction: column;
+        #logo{
+            font-size: 1.6rem;
+        }
         nav{
-            width: 70%;
             ul{
-                margin: 0px auto;
+                li{
+                    font-size: 0.9rem;
+                }
             }
-        };
+        }
+    }
+    main{
+        margin-top: 1.9rem;
+        #intro{
+            #main-box-left{
+                    margin-top: 1rem;
+                    width: 30%;
+                }
+            #main-box-right{
+                margin-top: 0rem;
+                h2{
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                #button{
+                    font-size: 0.8rem;
+                }
+                .social{
+                    margin-top: 0.8rem;
+                    .social-network{
+                        a{
+                            i{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        #box-container-upper-heading{ 
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem; 
+            scroll-margin-top: 8rem;
+        }
+        #box-container-upper{
+            .box{
+                .seo-class{
+                    font-size: 0.9rem;
+                }
+                i{
+                    font-size: 3.1rem;
+                }
+                h3{
+                    margin-top: 0.8rem;
+                    font-size: 1.1rem;
+                }
+                p{
+                    margin-top: 0.8rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        #box-container-lower{
+            .box{
+                h3{
+                    font-size: 1rem;
+                }
+                p{
+                    margin-top: 0.8rem;
+                    font-size: 0.8rem;
+                }
+                margin: 1.2rem 0;
+            }
+            .second{
+                .project-box{
+                    margin: 2rem 0.2rem;
+                    img{
+                        width: 100%;
+                        border-radius: 0.8rem;
+                        height: 130%;
+                    }
+                }
+            }
+            .skills{
+                margin: 0.7rem 0 0;
+                width: 85%;
+                
+            }
+            .skill{
+                margin-left: 2.8rem;
+            }
+            .skill-name{
+                font-size: 0.7rem;
+                font-weight: 500;
+                margin: 0.5rem 0 0.2rem 0;
+            }
+            .skill-bar{
+                height: 0.5rem;
+                border-radius: 0.13rem;
+            }
+            .first-per{
+                max-width: 90%;
+            }
+            .second-per{
+                max-width: 79%;
+            }
+            .third-per{
+                max-width: 87%;
+            }
+            .fourth-per{
+                max-width: 91%;
+            }
+            .skill-per{
+                height: 0.5rem;
+            }
+        }
+    }
+    footer{
+        #footer-left{
+            margin-top: 1rem;
+            #contact-info{
+                ul{
+                    .table-h{
+                        font-size: 1rem;
+                    }
+                    li{
+                        font-size: 0.8rem;
+                    }
+                   
+                    
+                }
+            }
+        }
+        #contact-form{
+            form{
+                input[type=text]{
+                    height: 1rem;
+                }
+                input[textarea]{
+                    height: 1rem;
+                    resize: none;
+                }
+                input[type=email]{
+                    height: 1rem;
+                }
+                .row{
+                    margin-top: 0.7rem;
+                    .col-25{
+                        margin: 0 0.7rem 0 0;
+                    }
+                    .col-75{
+                        justify-content: left;
+                    }
+                }
+                .submit-button{
+                    margin: 0.8rem auto;
+                    width: 100%;
+                }
+            }    
+        }
+        #footer-right{
+            margin-top: 2.2rem;
+            #requested{
+                font-size: 2rem;
+            }
+            i{
+                font-size: 1.7rem;
+            }
+            p{
+                margin-top: 1rem;
+            }
+        }
     }
 }
 @media screen and (max-width: 600px){

@@ -36,7 +36,7 @@ header #logo a {
   color: #e31c25;
 }
 header nav {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;

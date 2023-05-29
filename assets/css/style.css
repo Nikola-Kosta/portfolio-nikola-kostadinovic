@@ -265,7 +265,7 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: left;
   color: #c7cbd4;
 }
 footer #footer-left {

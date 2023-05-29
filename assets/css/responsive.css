@@ -2,16 +2,48 @@
   header {
     flex-direction: column;
   }
+  main {
+    margin-top: 3rem;
+  }
   main #intro #main-box-left {
     margin-top: 1rem;
     width: 30%;
   }
-  main #main-box-right h2 {
+  main #intro #main-box-right h2 {
+    font-size: 4rem;
+  }
+  main #intro #main-box-right p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  footer #footer-left #contact-info ul .table-h {
     font-size: 1rem;
   }
-  main #main-box-right p {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  footer #footer-left #contact-info ul li {
+    font-size: 0.8rem;
+  }
+  footer #contact-form form input[type=text] {
+    height: 1rem;
+  }
+  footer #contact-form form input[textarea] {
+    height: 1rem;
+    resize: none;
+  }
+  footer #contact-form form input[type=email] {
+    height: 1rem;
+  }
+  footer #contact-form form .row {
+    margin-top: 0.7rem;
+  }
+  footer #contact-form form .row .col-25 {
+    margin: 0 0.7rem 0 0;
+  }
+  footer #contact-form form .row .col-75 {
+    justify-content: left;
+  }
+  footer #contact-form form .submit-button {
+    margin: 0.8rem auto;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {

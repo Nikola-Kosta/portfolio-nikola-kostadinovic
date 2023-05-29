@@ -43,7 +43,6 @@ header{
     padding: 0.7rem 0;
     @include flex;
     #logo{
-        
         font-size: 3rem;
         a{
             text-decoration: none;
@@ -51,7 +50,7 @@ header{
         }
     }
     nav{
-        width: 60%;
+        width: 6    0%;
         @include flex;
         justify-content: end;
         ul{
@@ -76,8 +75,7 @@ header{
 }
 main{
     width: 100%;
-    
-    padding-top: 5rem;
+    padding-top: 4rem;
     #intro{
         @include flex;
         width: 100%;
@@ -95,7 +93,6 @@ main{
             width: 55%;
             h2{
                 font-size: 5rem;
-
             }
             p{
                 font-size: 3rem;

@@ -36,7 +36,7 @@ header #logo a {
   color: #e31c25;
 }
 header nav {
-  width: 60%;
+  width: 6 0%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,7 +63,7 @@ header nav a:active {
 
 main {
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 main #intro {
   display: flex;

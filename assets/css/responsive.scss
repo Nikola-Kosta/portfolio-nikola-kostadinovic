@@ -1,11 +1,24 @@
 @media screen and (max-width: 992px){
-    
-}
-@media screen and (max-width: 1025px){
-
-}
-@media screen and (max-width: 992px){
-    
+    header{
+        flex-direction: column;
+    }
+    main{
+    #intro{
+        #main-box-left{
+                margin-top: 1rem;
+                width: 30%;
+            }
+        }
+        #main-box-right{
+            h2{
+                font-size: 1rem;
+            }
+            p{
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 @media screen and (max-width: 768px){
     header{

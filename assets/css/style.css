@@ -231,43 +231,6 @@ main #box-container-lower .skill-bar {
   background-color: #282828;
   border-radius: 0.2rem;
 }
-main #box-container-lower .skill-per {
-  height: 0.7rem;
-  background: #d13639;
-  border-radius: 0.2rem;
-  position: relative;
-  animation: fillBars 3s infinite;
-}
-main #box-container-lower .skill-per animation ::before {
-  content: attr(per);
-  position: absolute;
-  padding: 0.2rem 0.3rem;
-  background: #ffffff;
-  border-radius: 0.3rem;
-  font-size: 1rem;
-  top: -2rem;
-  right: 0;
-  transform: translateX(50%);
-}
-main #box-container-lower .skill-per ::after {
-  content: "";
-  position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
-  background: #f1f1f1;
-  top: -20px;
-  right: 0;
-  transform: translateX(50%) rotate(45deg);
-  border-radius: 0.2rem;
-}
-@keyframes fillBars {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 main #box-container-lower .first-per {
   max-width: 90%;
 }
@@ -279,6 +242,21 @@ main #box-container-lower .third-per {
 }
 main #box-container-lower .fourth-per {
   max-width: 91%;
+}
+main #box-container-lower .skill-per {
+  height: 0.7rem;
+  background: #e31c25;
+  border-radius: 0.2rem;
+  position: relative;
+  animation: fillBars 3s infinite;
+}
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 footer {

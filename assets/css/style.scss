@@ -3,7 +3,7 @@ $wrap-color: #000000;
 $nav-bar-color: #161616;
 $text: #c7cbd4;
 $icons: #e31c25;
-$social-icons: #343333;
+$social-icons: #716c6c;
 $snow: #f1f1f1;
 $common-cell: #1c1c1c;
 $web-color: #bb000e;
@@ -132,9 +132,9 @@ main{
                     a {
                         margin-left: 0.5rem;
                         
+                        color:$social-icons;
                         i{
                             font-size: 2rem;
-                            color:$social-icons;
                         }
                         &:hover{
                             color: $icons;
@@ -193,13 +193,15 @@ main{
         justify-content: space-evenly;
         width: 100%;
         .box{
-            display: block;
+            
+        
             h3{
                 text-align: center;
             }
             p{
                 text-align: justify;
                 margin-top: 1rem;
+                text-indent: 10%;
             }
             background-color: $common-cell;
             box-shadow: 0.033rem 0.02rem 0.1rem $snow;
@@ -213,11 +215,13 @@ main{
             
         }
         .second{
-            display: block;
+            display: flex;
             text-align: center;
+            flex-direction: column;
+            justify-content: start;
             .project-box{
                 width: 100% auto;
-                margin: 1rem 0.2rem;
+                margin: 1.5rem 0.2rem;
                 img{
                     width: 100%;
                     border-radius: 1rem;
@@ -229,6 +233,7 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin: 1rem 0;
             width: 90%;
             
         }
@@ -344,13 +349,12 @@ footer{
                     @include flex;
                     justify-content: right;
                     flex: 1;
-                    margin: 0.5rem 2rem 0 0;
+                    margin: 0 1rem 0 0;
                 }
                 .col-75{
                     @include flex;
                     flex: 1;
                     justify-content: left;
-                    margin: 0 2rem 0 0;
                 }
             }
             .submit-button{

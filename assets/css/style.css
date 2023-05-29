@@ -122,16 +122,16 @@ main #intro #main-box-right .social {
 }
 main #intro #main-box-right .social .social-network a {
   margin-left: 0.5rem;
+  color: #716c6c;
 }
 main #intro #main-box-right .social .social-network a i {
   font-size: 2rem;
-  color: #343333;
 }
 main #intro #main-box-right .social .social-network a:hover {
   color: #e31c25;
 }
 main #intro #main-box-right .social .social-network a:active {
-  color: #343333;
+  color: #716c6c;
 }
 main #box-container-upper-heading {
   scroll-margin-top: 6.2rem;
@@ -179,7 +179,6 @@ main #box-container-lower {
   width: 100%;
 }
 main #box-container-lower .box {
-  display: block;
   background-color: #1c1c1c;
   box-shadow: 0.033rem 0.02rem 0.1rem #f1f1f1;
   color: #c7cbd4;
@@ -196,14 +195,17 @@ main #box-container-lower .box h3 {
 main #box-container-lower .box p {
   text-align: justify;
   margin-top: 1rem;
+  text-indent: 10%;
 }
 main #box-container-lower .second {
-  display: block;
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: start;
 }
 main #box-container-lower .second .project-box {
   width: 100% auto;
-  margin: 1rem 0.2rem;
+  margin: 1.5rem 0.2rem;
 }
 main #box-container-lower .second .project-box img {
   width: 100%;
@@ -214,6 +216,7 @@ main #box-container-lower .skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 1rem 0;
   width: 90%;
 }
 main #box-container-lower .skill {
@@ -328,7 +331,7 @@ footer #contact-form form .row .col-25 {
   align-items: center;
   justify-content: right;
   flex: 1;
-  margin: 0.5rem 2rem 0 0;
+  margin: 0 1rem 0 0;
 }
 footer #contact-form form .row .col-75 {
   display: flex;
@@ -336,7 +339,6 @@ footer #contact-form form .row .col-75 {
   align-items: center;
   flex: 1;
   justify-content: left;
-  margin: 0 2rem 0 0;
 }
 footer #contact-form form .submit-button {
   margin: 1rem auto;

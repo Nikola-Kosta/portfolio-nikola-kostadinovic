@@ -53,7 +53,6 @@ header nav ul li {
 header nav a {
   text-decoration: none;
   color: #bb000e;
-  padding: 0.5rem;
 }
 header nav a:hover {
   color: #c7cbd4;
@@ -112,11 +111,13 @@ main #intro #main-box-right #button:active {
 main #intro #main-box-right #button a {
   text-decoration: none;
   color: #c7cbd4;
+  padding: 2rem;
 }
 main #intro #main-box-right .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  opacity: 0.6;
   justify-content: start;
   margin-top: 1rem;
 }
@@ -209,6 +210,75 @@ main #box-container-lower .second .project-box img {
   width: 100%;
   border-radius: 1rem;
   box-shadow: 0.032rem 0.01rem 0.1rem #ffffff;
+}
+main #box-container-lower .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+main #box-container-lower .skill {
+  margin-left: 3rem;
+}
+main #box-container-lower .skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #c7cbd4;
+  margin: 1rem 0 0.2rem 0;
+}
+main #box-container-lower .skill-bar {
+  height: 0.7rem;
+  background-color: #282828;
+  border-radius: 0.2rem;
+}
+main #box-container-lower .skill-per {
+  height: 0.7rem;
+  background: #d13639;
+  border-radius: 0.2rem;
+  position: relative;
+  animation: fillBars 3s infinite;
+}
+main #box-container-lower .skill-per animation ::before {
+  content: attr(per);
+  position: absolute;
+  padding: 0.2rem 0.3rem;
+  background: #ffffff;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  top: -2rem;
+  right: 0;
+  transform: translateX(50%);
+}
+main #box-container-lower .skill-per ::after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 0.2rem;
+}
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+main #box-container-lower .first-per {
+  max-width: 90%;
+}
+main #box-container-lower .second-per {
+  max-width: 79%;
+}
+main #box-container-lower .third-per {
+  max-width: 87%;
+}
+main #box-container-lower .fourth-per {
+  max-width: 91%;
 }
 
 footer {

@@ -7,14 +7,17 @@
     font-size: 2rem;
   }
   main {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
   main #intro #main-box-left {
     margin-top: 1rem;
     width: 30%;
   }
+  main #intro #main-box-right {
+    margin-top: 0rem;
+  }
   main #intro #main-box-right h2 {
-    font-size: 4rem;
+    font-size: 1rem;
   }
   main #intro #main-box-right p {
     font-size: 1.5rem;
@@ -106,6 +109,9 @@
   }
   footer #footer-left #contact-info ul li {
     font-size: 0.8rem;
+  }
+  footer #contact-form #contact-title {
+    font-size: 1rem;
   }
   footer #contact-form form input[type=text] {
     height: 1rem;
@@ -151,87 +157,91 @@
     font-size: 1.6rem;
   }
   header nav ul li {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   main {
-    margin-top: 1.9rem;
+    margin-top: 1rem;
   }
   main #intro #main-box-left {
     margin-top: 1rem;
     width: 30%;
   }
-  main #intro #main-box-right {
-    margin-top: 0rem;
-  }
   main #intro #main-box-right h2 {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
   main #intro #main-box-right p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
   main #intro #main-box-right #button {
-    font-size: 0.8rem;
+    font-size: 0.67rem;
   }
   main #intro #main-box-right .social {
-    margin-top: 0.8rem;
+    margin-top: 0.6rem;
   }
   main #intro #main-box-right .social .social-network a i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   main #box-container-upper-heading {
     text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    scroll-margin-top: 8rem;
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+    scroll-margin-top: 5rem;
+  }
+  main #box-container-upper .box {
+    width: 24%;
   }
   main #box-container-upper .box .seo-class {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   main #box-container-upper .box i {
-    font-size: 3.1rem;
+    font-size: 2.7rem;
   }
   main #box-container-upper .box h3 {
-    margin-top: 0.8rem;
-    font-size: 1.1rem;
+    margin-top: 0.7rem;
+    font-size: 1rem;
   }
   main #box-container-upper .box p {
     margin-top: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   main #box-container-lower .box {
-    margin: 1.2rem 0;
+    width: 41%;
+    margin: 1rem 0;
   }
   main #box-container-lower .box h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   main #box-container-lower .box p {
-    margin-top: 0.8rem;
-    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    font-size: 0.7rem;
   }
   main #box-container-lower .second .project-box {
     margin: 2rem 0.2rem;
   }
   main #box-container-lower .second .project-box img {
     width: 100%;
-    border-radius: 0.8rem;
+    border-radius: 0.6rem;
     height: 130%;
   }
   main #box-container-lower .skills {
-    margin: 0.7rem 0 0;
+    margin: 0.6rem 0 0;
     width: 85%;
   }
   main #box-container-lower .skill {
     margin-left: 2.8rem;
   }
   main #box-container-lower .skill-name {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     font-weight: 500;
-    margin: 0.5rem 0 0.2rem 0;
+    margin: 0.4rem 0 0.2rem 0;
   }
   main #box-container-lower .skill-bar {
-    height: 0.5rem;
+    height: 0.4rem;
     border-radius: 0.13rem;
+  }
+  main #box-container-lower .skill-per {
+    height: 0.4rem;
   }
   main #box-container-lower .first-per {
     max-width: 90%;
@@ -245,52 +255,62 @@
   main #box-container-lower .fourth-per {
     max-width: 91%;
   }
-  main #box-container-lower .skill-per {
-    height: 0.5rem;
+  footer {
+    display: flex;
+    justify-content: space-around;
   }
   footer #footer-left {
-    margin-top: 1rem;
+    margin: 0.7rem auto;
+  }
+  footer #footer-left #contact-info ul {
+    margin: 0;
   }
   footer #footer-left #contact-info ul .table-h {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   footer #footer-left #contact-info ul li {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+  footer #contact-form {
+    align-items: left;
+  }
+  footer #contact-form #contact-title {
+    font-size: 0.7rem;
   }
   footer #contact-form form input[type=text] {
-    height: 1rem;
+    height: 0.7rem;
   }
-  footer #contact-form form input[textarea] {
-    height: 1rem;
+  footer #contact-form form input[type=textarea] {
+    height: 0.7rem;
     resize: none;
   }
   footer #contact-form form input[type=email] {
-    height: 1rem;
+    height: 0.7rem;
   }
   footer #contact-form form .row {
-    margin-top: 0.7rem;
+    margin-top: 0.6rem;
   }
   footer #contact-form form .row .col-25 {
     margin: 0 0.7rem 0 0;
+    font-size: 0.7rem;
   }
   footer #contact-form form .row .col-75 {
     justify-content: left;
+    font-size: 0.7rem;
   }
   footer #contact-form form .submit-button {
-    margin: 0.8rem auto;
+    margin: 0.6rem auto;
     width: 100%;
   }
   footer #footer-right {
-    margin-top: 2.2rem;
-  }
-  footer #footer-right #requested {
-    font-size: 2rem;
+    margin: 0.5rem auto;
   }
   footer #footer-right i {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   footer #footer-right p {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 411px) {

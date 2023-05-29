@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  background-image: url("../img/author.jpg");
+  background-image: url("../img/background-image.jpg");
   background-size: cover;
 }
 
@@ -71,11 +71,11 @@ main #intro {
   align-items: center;
   width: 100%;
   color: #c7cbd4;
-  padding: 2rem 0;
   justify-content: space-evenly;
 }
 main #intro #main-box-left, main #intro #main-box-right {
   width: 25%;
+  margin-top: 3rem;
 }
 main #intro #main-box-left img, main #intro #main-box-right img {
   width: 100%;
@@ -213,13 +213,13 @@ main #box-container-lower .second .project-box img {
 
 footer {
   display: flex;
-  justify-content: space-around;
   width: 100%;
   text-align: center;
   align-items: center;
   color: #c7cbd4;
 }
 footer #footer-left {
+  justify-content: right;
   width: 30%;
   display: flex;
 }
@@ -273,27 +273,32 @@ footer #contact-form form .row {
   margin-top: 1rem;
 }
 footer #contact-form form .row .col-25 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: right;
   flex: 1;
   width: 30%;
-  margin: 0.5rem 0rem 0 0;
-  justify-content: right;
+  margin: 0.5rem 2rem 0 0;
 }
 footer #contact-form form .row .col-75 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: left;
   flex: 1;
   width: 40%;
-  margin: 0.5rem 1rem 0 0;
-  justify-content: left;
+  margin: 0 2rem 0 0;
 }
-footer #contact-form form #submit-button {
-  margin: 0.5rem auto;
-  padding: 0.5rem;
+footer #contact-form form .submit-button {
+  margin: 1rem auto;
+  width: 100%;
 }
-footer #contact-form form #submit-button input[type=submit] {
+footer #contact-form form .submit-button input[type=submit] {
   background-color: #1e1e1e;
   color: #c7cbd4;
-  width: 30%;
 }
-footer #contact-form form #submit-button input[type=submit]:hover {
+footer #contact-form form .submit-button input[type=submit]:hover {
   background-color: #ffffff;
   color: #161616;
 }

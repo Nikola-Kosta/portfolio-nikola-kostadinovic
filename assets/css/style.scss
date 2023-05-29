@@ -22,7 +22,7 @@ $web-color: #bb000e;
 }
 body{
     width: 100%;
-    background-image: url("../img/author.jpg");
+    background-image: url("../img/background-image.jpg");
     background-size: cover;
     
 }
@@ -79,11 +79,10 @@ main{
         @include flex;
         width: 100%;
         color: $text;
-        padding: 2rem 0;
         justify-content: space-evenly;
         #main-box-left{
-            
             width: 25%;
+            margin-top: 3rem;
             img{
                 width: 100%;
             }
@@ -227,12 +226,13 @@ main{
 }
 footer{
     display: flex;
-    justify-content: space-around;
     width: 100%;
     text-align: center;
     align-items: center;
     color: $text;
     #footer-left{
+        
+    justify-content: right;
         width: 30%;
         display: flex;
         #contact-info {
@@ -284,30 +284,32 @@ footer{
                 display: flex;
                 margin-top: 1rem;
                 .col-25{
+                    @include flex;
+                    justify-content: right;
                     flex: 1;
                     width: 30%;
-                    margin: 0.5rem 0rem 0 0;
-                    justify-content: right;
+                    margin: 0.5rem 2rem 0 0;
                 }
                 .col-75{
+                    @include flex;
+                    justify-content: left;
                     flex: 1;
                     width: 40%;
-                    margin: 0.5rem 1rem 0 0;
-                    justify-content: left;
+                    margin: 0 2rem 0 0;
                 }
-                
             }
-            #submit-button{
-                margin: 0.5rem auto;
-                padding: 0.5rem;
+            .submit-button{
+                margin: 1rem auto;
+                width: 100%;
                 input[type=submit]{
                     background-color: #1e1e1e;
                     color: $text;
+                    
                     &:hover{
                         background-color: $snow;
                         color: #161616;
                     }
-                    width: 30%;
+                    
                 }
                 
             }

@@ -111,7 +111,6 @@ main #intro #main-box-right #button:active {
 main #intro #main-box-right #button a {
   text-decoration: none;
   color: #c7cbd4;
-  padding: 2rem;
 }
 main #intro #main-box-right .social {
   display: flex;
@@ -152,8 +151,7 @@ main #box-container-upper .box {
   padding: 1rem;
   background-color: #1c1c1c;
   border-radius: 1rem;
-  font-size: 1rem;
-  box-shadow: 0.033rem 0.01rem 0.1rem #f1f1f1;
+  box-shadow: 0.032rem 0.01rem 0.1rem #f1f1f1;
 }
 main #box-container-upper .box .seo-class {
   color: #e31c25;
@@ -171,6 +169,7 @@ main #box-container-upper .box h3 {
 main #box-container-upper .box p {
   color: #c7cbd4;
   margin-top: 1rem;
+  font-size: 1.2rem;
 }
 main #box-container-lower {
   scroll-margin-top: 4.5rem;
@@ -180,13 +179,13 @@ main #box-container-lower {
 }
 main #box-container-lower .box {
   background-color: #1c1c1c;
-  box-shadow: 0.033rem 0.02rem 0.1rem #f1f1f1;
+  box-shadow: 0.032rem 0.02rem 0.1rem #f1f1f1;
   color: #c7cbd4;
   width: 43%;
   padding: 1rem;
   border-radius: 1rem;
   font-size: 1rem;
-  margin: 1.5rem 0rem;
+  margin: 1.5rem 0;
   flex-direction: column;
 }
 main #box-container-lower .box h3 {
@@ -209,7 +208,7 @@ main #box-container-lower .second .project-box {
 }
 main #box-container-lower .second .project-box img {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   box-shadow: 0.032rem 0.01rem 0.1rem #f1f1f1;
 }
 main #box-container-lower .skills {

@@ -118,7 +118,6 @@ main{
                 a{
                     text-decoration: none;
                     color: $text;
-                    padding: 2rem;
                 }
             }
             .social{
@@ -128,7 +127,6 @@ main{
                 .social-network{
                     a {
                         margin-left: 0.5rem;
-                        
                         color:$social-icons;
                         i{
                             font-size: 2rem;
@@ -162,8 +160,7 @@ main{
             padding: 1rem;
             background-color: $common-cell;
             border-radius: 1rem;
-            font-size: 1rem;
-            box-shadow: 0.033rem 0.01rem 0.1rem $snow;
+            box-shadow: 0.032rem 0.01rem 0.1rem $snow;
             .seo-class{
                 color: $icons;
                 font-size: 1.3rem;
@@ -180,6 +177,7 @@ main{
             p{
                 color: $text;
                 margin-top: 1rem;
+                font-size: 1.2rem;
             }
         }
         
@@ -190,8 +188,6 @@ main{
         justify-content: space-evenly;
         width: 100%;
         .box{
-            
-        
             h3{
                 text-align: center;
             }
@@ -201,13 +197,13 @@ main{
                 text-indent: 10%;
             }
             background-color: $common-cell;
-            box-shadow: 0.033rem 0.02rem 0.1rem $snow;
+            box-shadow: 0.032rem 0.02rem 0.1rem $snow;
             color: $text;
             width: 43%;
             padding: 1rem;
             border-radius: 1rem;
             font-size: 1rem;
-            margin: 1.5rem 0rem;
+            margin: 1.5rem 0;
             flex-direction: column;
             
         }
@@ -221,7 +217,7 @@ main{
                 margin: 1.5rem 0.2rem;
                 img{
                     width: 100%;
-                    border-radius: 1rem;
+                    border-radius: 0.5rem;
                     box-shadow: 0.032rem 0.01rem 0.1rem $snow;
                 }
             }

@@ -239,7 +239,7 @@
                 }
                 h3{
                     margin-top: 0.7rem;
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }
                 p{
                     margin-top: 0.8rem;
@@ -376,8 +376,19 @@
         }
     }
 }
-@media screen and (max-width: 704px){
-    
+@media screen and (max-width: 652px){
+    header{
+        #logo{
+            font-size: 1.5rem;
+        }
+        nav{
+            ul{
+                li{
+                    font-size: 0.71rem;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 600px){
     

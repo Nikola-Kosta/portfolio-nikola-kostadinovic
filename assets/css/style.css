@@ -775,7 +775,7 @@ footer #footer-right #requested i {
     color: #e31c25;
   }
   main #box-container-upper .box {
-    width: 85%;
+    widthS: 85%;
     margin: 0 auto 1rem;
     padding: 1rem;
     border-radius: 0.5rem;

@@ -169,6 +169,7 @@ main #box-container-upper .box p {
   color: #c7cbd4;
   margin-top: 1rem;
   font-size: 1.2rem;
+  text-align: justify;
 }
 main #box-container-lower {
   scroll-margin-top: 4.5rem;
@@ -263,15 +264,13 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  align-items: left;
   color: #c7cbd4;
 }
 footer #footer-left {
   display: flex;
   flex-direction: column;
-  text-align: center;
   flex-flow: column wrap;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 footer #footer-left #contact-info {
   display: flex;
@@ -280,6 +279,7 @@ footer #footer-left #contact-info {
 footer #footer-left #contact-info ul {
   list-style-type: none;
   margin-top: 1rem;
+  word-break: break-word;
 }
 footer #footer-left #contact-info ul .table-h {
   font-size: 1.5rem;
@@ -287,8 +287,8 @@ footer #footer-left #contact-info ul .table-h {
 footer #footer-left #contact-info ul li {
   list-style: none;
   color: #c7cbd4;
-  font-size: 1rem;
-  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
 }
 footer #footer-left #contact-info ul li a {
   text-decoration: none;
@@ -305,6 +305,7 @@ footer #contact-form {
   flex-direction: column;
   align-items: left;
   flex-flow: column wrap;
+  padding: 0.5rem;
 }
 footer #contact-form #contact-title {
   color: #c7cbd4;
@@ -354,17 +355,16 @@ footer #contact-form form .submit-button input[type=submit]:hover {
 }
 footer #footer-right {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  word-break: break-word;
   color: #c7cbd4;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 footer #footer-right #requested {
   font-size: 2.3rem;
 }
 footer #footer-right #requested i {
   color: #e31c25;
-}
-footer #footer-right p {
-  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */

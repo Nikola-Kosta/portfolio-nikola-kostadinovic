@@ -794,7 +794,7 @@ footer #footer-right #requested i {
     text-align: justify;
   }
   main #box-container-upper .box .seo-class {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
   main #box-container-lower {
     scroll-margin-top: 4.5rem;
@@ -968,21 +968,5 @@ footer #footer-right #requested i {
   }
   footer #footer-right p {
     margin: 0;
-  }
-}
-@media screen and (max-width: 411px) {
-  header {
-    flex-direction: column;
-  }
-  header nav {
-    text-align: center;
-  }
-  header nav ul {
-    flex-direction: column;
-    margin: 0px auto;
-  }
-  header nav ul li {
-    display: block;
-    margin: 5px 0px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -291,7 +291,7 @@ footer #footer-left #contact-info ul li {
   list-style: none;
   color: #c7cbd4;
   font-size: 0.9rem;
-  margin-top: 0.5rem;
+  margin-top: rem;
 }
 footer #footer-left #contact-info ul li a {
   text-decoration: none;
@@ -966,5 +966,21 @@ footer #footer-right #requested i {
   }
   footer #footer-right p {
     margin: 0;
+  }
+}
+@media screen and (max-width: 411px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  header nav ul li {
+    display: block;
+    margin: 5px 0px;
   }
 }/*# sourceMappingURL=style.css.map */

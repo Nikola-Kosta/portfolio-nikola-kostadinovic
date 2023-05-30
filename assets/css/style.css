@@ -274,21 +274,24 @@ footer #footer-left {
 }
 footer #footer-left #contact-info {
   display: flex;
+  flex-direction: column;
   flex: 1;
+}
+footer #footer-left #contact-info h2 {
+  font-size: 1.4rem;
+  margin: 0.5rem auto;
+  text-align: center;
 }
 footer #footer-left #contact-info ul {
   list-style-type: none;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   word-break: break-word;
-}
-footer #footer-left #contact-info ul .table-h {
-  font-size: 1.5rem;
 }
 footer #footer-left #contact-info ul li {
   list-style: none;
   color: #c7cbd4;
   font-size: 0.9rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 footer #footer-left #contact-info ul li a {
   text-decoration: none;
@@ -475,8 +478,14 @@ footer #footer-right #requested i {
   footer #footer-left {
     margin-top: 1rem;
   }
-  footer #footer-left #contact-info ul .table-h {
-    font-size: 1rem;
+  footer #footer-left #contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  footer #footer-left #contact-info h2 {
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
+    text-align: center;
   }
   footer #footer-left #contact-info ul li {
     font-size: 0.8rem;
@@ -636,9 +645,6 @@ footer #footer-right #requested i {
   footer #footer-left #contact-info ul {
     margin: 0;
   }
-  footer #footer-left #contact-info ul .table-h {
-    font-size: 0.7rem;
-  }
   footer #footer-left #contact-info ul li {
     font-size: 0.7rem;
     margin-top: 0.5rem;
@@ -696,6 +702,270 @@ footer #footer-right #requested i {
   }
   header nav ul li {
     font-size: 0.69rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0.3rem 0;
+  }
+  header #logo {
+    display: block;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  header nav {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+  }
+  header nav ul li {
+    display: block;
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0.2rem auto;
+  }
+  main {
+    width: 100%;
+    padding-top: 4rem;
+  }
+  main #intro #main-box-left, main #intro #main-box-right {
+    width: 25%;
+    margin-top: 5rem;
+  }
+  main #intro #main-box-right {
+    width: 55%;
+  }
+  main #intro #main-box-right h2 {
+    font-size: 1.8rem;
+  }
+  main #intro #main-box-right p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  main #intro #main-box-right p .web-color {
+    color: #bb000e;
+  }
+  main #intro #main-box-right #button {
+    font-size: 0.6em;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+  }
+  main #intro #main-box-right .social {
+    margin-top: 0.5rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  main #intro #main-box-right .social .social-network a {
+    margin: 0;
+  }
+  main #intro #main-box-right .social .social-network a i {
+    font-size: 1.2rem;
+  }
+  main #box-container-upper-heading {
+    scroll-margin-top: 6.2rem;
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 1.2rem auto 1rem;
+  }
+  main #box-container-upper {
+    display: block;
+    width: 100%;
+    color: #e31c25;
+  }
+  main #box-container-upper .box {
+    width: 85%;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.03rem 0.01rem 0.1rem #f1f1f1;
+  }
+  main #box-container-upper .box i {
+    font-size: 2.75rem;
+  }
+  main #box-container-upper .box h3 {
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+  }
+  main #box-container-upper .box p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  main #box-container-upper .box .seo-class {
+    font-size: 1.3rem;
+  }
+  main #box-container-lower {
+    scroll-margin-top: 4.5rem;
+    display: block;
+    width: 100%;
+  }
+  main #box-container-lower .box {
+    width: 85%;
+    box-shadow: 0.031rem 0.02rem 0.1rem #f1f1f1;
+    padding: 1rem;
+    margin: 0 auto 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  main #box-container-lower .box h3 {
+    text-align: center;
+  }
+  main #box-container-lower .box p {
+    text-align: justify;
+    margin-top: 0.8rem;
+    text-indent: 10%;
+  }
+  main #box-container-lower .second {
+    display: block;
+  }
+  main #box-container-lower .second .project-box {
+    display: block;
+    margin: 0.5rem auto;
+  }
+  main #box-container-lower .second .project-box img {
+    width: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0.031rem 0.01rem 0.1rem #f1f1f1;
+  }
+  main #box-container-lower .skills {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main #box-container-lower .skill {
+    margin: 0 auto;
+  }
+  main #box-container-lower .skill-name {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #c7cbd4;
+    margin: 0.5rem 0 0.1rem 0;
+  }
+  main #box-container-lower .skill-bar {
+    height: 0.4rem;
+    border-radius: 0.15rem;
+  }
+  main #box-container-lower .first-per {
+    max-width: 90%;
+  }
+  main #box-container-lower .second-per {
+    max-width: 79%;
+  }
+  main #box-container-lower .third-per {
+    max-width: 87%;
+  }
+  main #box-container-lower .fourth-per {
+    max-width: 91%;
+  }
+  main #box-container-lower .skill-per {
+    height: 0.4rem;
+    border-radius: 0.15rem;
+    position: relative;
+    animation: fillBars 3s infinite;
+  }
+  @keyframes fillBars {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  footer {
+    display: block;
+    margin: 0 auto;
+  }
+  footer #footer-left {
+    width: 80%;
+  }
+  footer #footer-left #contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  footer #footer-left #contact-info h2 {
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
+    text-align: center;
+  }
+  footer #footer-left #contact-info ul {
+    word-break: break-word;
+    margin-top: 0rem;
+  }
+  footer #footer-left #contact-info ul li {
+    list-style: none;
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+    text-align: center;
+  }
+  footer #contact-form {
+    display: block;
+    width: 70%;
+    margin: 1rem auto 0;
+  }
+  footer #contact-form #contact-title h2 {
+    color: #c7cbd4;
+    font-size: 0.8rem;
+  }
+  footer #contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  footer #contact-form form input[type=text] {
+    height: 0.9rem;
+  }
+  footer #contact-form form input[textarea] {
+    height: 0.9rem;
+    resize: none;
+  }
+  footer #contact-form form input[type=email] {
+    height: 0.9rem;
+  }
+  footer #contact-form form .row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+  footer #contact-form form .row .col-25 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0 1rem 0 0;
+  }
+  footer #contact-form form .row .col-75 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+  footer #contact-form form .submit-button {
+    margin: 0.5rem auto;
+    width: 100%;
+    text-align: center;
+  }
+  footer #contact-form form .submit-button input[type=submit] {
+    font-size: 0.8rem;
+  }
+  footer #footer-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-word;
+    margin: 0 auto 0;
+    padding-bottom: 2rem;
+  }
+  footer #footer-right #requested {
+    font-size: 2rem;
+  }
+  footer #footer-right #requested i {
+    color: #e31c25;
+  }
+  footer #footer-right p {
+    margin: 0;
   }
 }
 @media screen and (max-width: 411px) {

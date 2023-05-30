@@ -287,19 +287,22 @@ footer{
         padding: 0 1rem;
         #contact-info {
             display: flex;
-            flex: 1; 
+            flex-direction: column;
+            flex: 1;
+            h2{
+                font-size: 1.4rem;
+                margin: 0.5rem auto;
+                text-align: center;
+            }
             ul{
-                .table-h{
-                    font-size: 1.5rem;
-                }
                 list-style-type: none;
-                margin-top: 1rem;
+                margin-top: 0.5rem;
                 word-break: break-word;
                 li{
                     list-style: none;
                     color: $text;
                     font-size: 0.9rem;
-                    margin-top: 1rem;
+                    margin-top: 0.5rem;
                     
                     a{
                         text-decoration: none;
@@ -507,11 +510,15 @@ footer{
     footer{
         #footer-left{
             margin-top: 1rem;
-            #contact-info{
+            #contact-info {
+                display: flex;
+                flex-direction: column;
+                h2{
+                    font-size: 0.8rem;
+                    margin: 0.5rem auto;
+                    text-align: center;
+                }
                 ul{
-                    .table-h{
-                        font-size: 1rem;
-                    }
                     li{
                         font-size: 0.8rem;
                     }
@@ -698,9 +705,7 @@ footer{
             #contact-info{
                 ul{
                     margin: 0;
-                    .table-h{
-                        font-size: 0.7rem;
-                    }
+                    
                     li{
                         font-size: 0.7rem;
                         margin-top: 0.5rem;
@@ -778,7 +783,279 @@ footer{
     }
 }
 @media screen and (max-width: 600px){
-    
+    header{
+        padding: 0.3rem 0;
+        #logo{
+            display: block;
+            font-size: 2rem;
+            margin: 0 auto;
+        }
+        nav{
+            display: block;
+            width: 40%;
+            margin: 0 auto;
+            ul{
+                li{
+                    display: block;
+                    font-size: 0.7rem;
+                    text-align: center;
+                    margin: 0.2rem auto;
+                }
+            }
+        }
+    }
+    main{
+        width: 100%;
+        padding-top: 4rem;
+        #intro{
+            #main-box-left{
+                width: 25%;
+                margin-top: 5rem;
+            }
+            #main-box-right{
+                @extend #main-box-left;
+                width: 55%;
+                h2{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                    .web-color{
+                        color:$web-color;
+                    }
+                }
+                #button{
+                    font-size: 0.6em;
+                    padding: 0.2rem;
+                    border-radius: 0.2rem;
+                }
+                .social{
+                    margin-top: 0.5rem;
+                    width: 30%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    .social-network{
+                        a {
+                            margin: 0;
+                            i{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #box-container-upper-heading{   
+            scroll-margin-top: 6.2rem;
+            width: 100%;
+            font-size: 0.8rem;
+            margin: 1.2rem auto 1rem;
+        }
+        #box-container-upper{
+            display: block;
+            width: 100%;
+            color: $icons;
+            .box{
+                width: 85%;
+                margin: 0 auto 1rem;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                box-shadow: 0.03rem 0.01rem 0.1rem $snow;
+                i{
+                    font-size: 2.75rem;
+                }
+                h3{
+                    margin-top: 0.5rem;
+                    font-size: 1.05rem;
+                }
+                p{
+                    margin-top: 0.5rem;
+                    font-size: 0.8rem;
+                    text-align: justify;
+                }
+                .seo-class{
+                    font-size: 1.3rem;
+                }
+            }
+            
+        }
+        #box-container-lower{
+            scroll-margin-top: 4.5rem;
+            display: block;
+            width: 100%;
+            .box{
+                width: 85%;
+                box-shadow: 0.031rem 0.02rem 0.1rem $snow;
+                padding: 1rem;
+                margin: 0 auto 1rem;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: justify;
+                    margin-top: 0.8rem;
+                    text-indent: 10%;
+                }
+                
+                
+            }
+            .second{
+                display: block;
+                .project-box{
+                    display: block;
+                    margin: 0.5rem auto;
+                    img{
+                        width: 100%;
+                        border-radius: 0.3rem;
+                        box-shadow: 0.031rem 0.01rem 0.1rem $snow;
+                    }
+                }
+            }
+            .skills{
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+            }
+            .skill{
+                margin: 0 auto;
+            }
+            .skill-name{
+                font-size: 0.7rem;
+                font-weight: 500;
+                color: $text;
+                margin: 0.5rem 0 0.1rem 0;
+            }
+            .skill-bar{
+                height: 0.4rem;
+                border-radius: 0.15rem;
+            }
+            .first-per{
+                max-width: 90%;
+            }
+            .second-per{
+                max-width: 79%;
+            }
+            .third-per{
+                max-width: 87%;
+            }
+            .fourth-per{
+                max-width: 91%;
+            }
+            .skill-per{
+                height: 0.4rem;
+                border-radius: 0.15rem;
+                position: relative;
+                animation: fillBars 3s infinite;
+                @keyframes fillBars{
+                    from{
+                        width: 0;
+                    }
+                    to{
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+    }
+    footer{
+        display: block;
+        margin: 0 auto;
+        #footer-left{
+            width: 80%;
+            #contact-info {
+                display: flex;
+                flex-direction: column;
+                h2{
+                    font-size: 0.8rem;
+                    margin: 0.5rem auto;
+                    text-align: center;
+                }
+                ul{
+                    word-break: break-word;
+                    margin-top: 0rem;
+                    li{
+                        list-style: none;
+                        font-size: 0.7rem;
+                        margin-top: 0.2rem;
+                        text-align: center;
+                    }
+                }
+            } 
+        } 
+        #contact-form {
+            display: block;
+            width: 70%;
+            margin: 1rem auto 0;
+            #contact-title {
+                h2{
+                    color: $text;
+                    font-size: 0.8rem;
+                } 
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                input[type=text]{
+                    height: 0.9rem;
+                }
+                input[textarea]{
+                    height: 0.9rem;
+                    resize: none;
+                }
+                input[type=email]{
+                    height: 0.9rem;
+                }
+                .row{
+                    display: flex;
+                flex-direction: column;
+                    margin-top: 0.5rem;
+                    .col-25{
+                        @include flex;
+                        justify-content: center;
+                        flex: 1;
+                        margin: 0 1rem 0 0;
+                    }
+                    .col-75{
+                        @include flex;
+                        flex: 1;
+                        justify-content: center;
+                    }
+                }
+                .submit-button{
+                    margin: 0.5rem auto;
+                    width: 100%;
+                    text-align: center;
+                    input[type=submit]{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        #footer-right{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            word-break: break-word;
+            margin: 0 auto 0;
+            padding-bottom: 2rem;
+            #requested{
+                font-size: 2rem;
+                i{
+                    color: $icons;
+                }
+                
+            }
+            p{
+                margin: 0;
+            }
+            
+        }
+    }
 }
 @media screen and (max-width: 480px){
     

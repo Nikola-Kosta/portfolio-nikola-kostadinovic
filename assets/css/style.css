@@ -19,6 +19,7 @@ body {
 
 header {
   position: fixed;
+  z-index: 1;
   background-color: #161616;
   top: 0;
   width: 80%;
@@ -862,6 +863,7 @@ footer #footer-right #requested i {
     height: 0.4rem;
     border-radius: 0.15rem;
     position: relative;
+    z-index: 0;
     animation: fillBars 3s infinite;
   }
   @keyframes fillBars {

@@ -1060,23 +1060,3 @@ footer{
 @media screen and (max-width: 480px){
     
 }
-@media screen and (max-width: 414px){
-    
-}
-@media screen and (max-width: 411px){
-    header{
-        flex-direction: column;
-        nav {
-            text-align: center;
-            ul{
-            flex-direction: column;
-            margin: 0px auto;
-            li{
-                display: block;
-                margin: 5px 0px;
-            }
-        }
-        }
-    }
-    
-}

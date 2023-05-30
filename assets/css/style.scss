@@ -10,30 +10,33 @@ $web-color: #bb000e;
 $bar-color: #282828;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-@mixin flex{
+@mixin flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-body{
+
+body {
     width: 100%;
     background-image: url("../img/background-image.jpg");
     background-size: cover;
-    
+
 }
-#wrapper{
+
+#wrapper {
     background-color: $wrap-color;
     width: 80%;
     margin: 0px auto;
 }
-header{
+
+header {
     position: fixed;
     z-index: 1;
     background-color: $nav-bar-color;
@@ -41,99 +44,124 @@ header{
     width: 80%;
     padding: 0.5rem 0;
     @include flex;
-    #logo{
+
+    #logo {
         font-size: 3rem;
-        a{
+
+        a {
             text-decoration: none;
             color: $icons;
         }
     }
-    nav{
-        width: 6    0%;
+
+    nav {
+        width: 6 0%;
         @include flex;
         justify-content: end;
-        ul{
+
+        ul {
             list-style-type: none;
-            li{
+
+            li {
                 display: inline;
                 margin-left: 2rem;
                 font-size: 1rem;
             }
         }
-        a{
+
+        a {
             text-decoration: none;
             color: $web-color;
-            &:hover{
+
+            &:hover {
                 color: $text;
             }
-            &:active{
+
+            &:active {
                 color: $icons;
             }
         }
     }
 }
-main{
+
+main {
     width: 100%;
     padding-top: 4rem;
-    #intro{
+
+    #intro {
         @include flex;
         width: 100%;
         color: $text;
         justify-content: space-evenly;
-        #main-box-left{
+
+        #main-box-left {
             width: 25%;
             margin-top: 3rem;
-            img{
+
+            img {
                 width: 100%;
             }
         }
-        #main-box-right{
+
+        #main-box-right {
             @extend #main-box-left;
             width: 55%;
-            h2{
+
+            h2 {
                 font-size: 5rem;
             }
-            p{
+
+            p {
                 font-size: 3rem;
                 margin-bottom: 1rem;
-                .web-color{
-                    color:$web-color;
+
+                .web-color {
+                    color: $web-color;
                 }
             }
-            #button{
+
+            #button {
                 background-color: $icons;
                 width: 100%;
                 font-size: 1rem;
                 padding: 0.3rem;
                 border-radius: 0.5rem;
-                &:hover{
+
+                &:hover {
                     background-color: $snow;
                     color: #000000;
                 }
-                &:active{
+
+                &:active {
                     background-color: $icons;
                     color: $text;
-                }   
-                a{
+                }
+
+                a {
                     text-decoration: none;
                     color: $text;
                 }
             }
-            .social{
+
+            .social {
                 @include flex;
                 justify-content: start;
                 margin-top: 1rem;
-                .social-network{
+
+                .social-network {
                     a {
                         margin-left: 0.5rem;
-                        color:$social-icons;
-                        i{
+                        color: $social-icons;
+
+                        i {
                             font-size: 2rem;
                         }
-                        &:hover{
+
+                        &:hover {
                             color: $icons;
                         }
-                        &:active{
+
+                        &:active {
                             color: $social-icons;
                         }
                     }
@@ -141,7 +169,8 @@ main{
             }
         }
     }
-    #box-container-upper-heading{   
+
+    #box-container-upper-heading {
         scroll-margin-top: 6.2rem;
         width: 100%;
         color: $text;
@@ -149,53 +178,64 @@ main{
         font-size: 2rem;
         margin-bottom: 2rem;
     }
-    #box-container-upper{
+
+    #box-container-upper {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
         color: $icons;
-        .box{
+
+        .box {
             width: 27%;
             padding: 1rem;
             background-color: $common-cell;
             border-radius: 1rem;
             box-shadow: 0.032rem 0.01rem 0.1rem $snow;
-            .seo-class{
+
+            .seo-class {
                 color: $icons;
                 font-size: 1.3rem;
             }
-            i{
+
+            i {
                 font-size: 4rem;
                 color: $icons;
             }
-            h3{
+
+            h3 {
                 color: $text;
                 margin-top: 1rem;
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
-            p{
+
+            p {
                 color: $text;
                 margin-top: 1rem;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 text-align: justify;
             }
         }
-        
+
     }
-    #box-container-lower{
+
+    #box-container-lower {
         scroll-margin-top: 4.5rem;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
-        .box{
-            h3{
+
+        .box {
+            h3 {
                 text-align: center;
             }
-            p{
+
+            p {
                 text-align: justify;
                 margin-top: 1rem;
                 text-indent: 10%;
+                font-size: 1.3rem;
             }
+
             background-color: $common-cell;
             box-shadow: 0.032rem 0.02rem 0.1rem $snow;
             color: $text;
@@ -205,173 +245,207 @@ main{
             font-size: 1rem;
             margin: 1.5rem 0;
             flex-direction: column;
-            
+
         }
-        .second{
+
+        .second {
             display: flex;
             text-align: center;
             flex-direction: column;
             justify-content: start;
-            .project-box{
+
+            .project-box {
                 width: 100% auto;
                 margin: 1.5rem 0.2rem;
-                img{
+
+                img {
                     width: 100%;
                     border-radius: 0.5rem;
                     box-shadow: 0.032rem 0.01rem 0.1rem $snow;
                 }
             }
         }
-        .skills{
+
+        .skills {
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin: 1rem 0;
             width: 90%;
-            
+
         }
-        .skill{
+
+        .skill {
             margin-left: 3rem;
         }
-        .skill-name{
+
+        .skill-name {
             font-size: 1rem;
             font-weight: 500;
             color: $text;
             margin: 1rem 0 0.2rem 0;
         }
-        .skill-bar{
+
+        .skill-bar {
             height: 0.7rem;
             background-color: $bar-color;
             border-radius: 0.2rem;
         }
-        .first-per{
+
+        .first-per {
             max-width: 90%;
         }
-        .second-per{
+
+        .second-per {
             max-width: 79%;
         }
-        .third-per{
+
+        .third-per {
             max-width: 87%;
         }
-        .fourth-per{
+
+        .fourth-per {
             max-width: 91%;
         }
-        .skill-per{
+
+        .skill-per {
             height: 0.7rem;
             background: $icons;
             border-radius: 0.2rem;
             position: relative;
             animation: fillBars 3s infinite;
-            @keyframes fillBars{
-                
-                from{
+
+            @keyframes fillBars {
+
+                from {
                     width: 0;
                 }
-                to{
+
+                to {
                     width: 100%;
                 }
             }
         }
-        
+
     }
 }
-footer{
+
+footer {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     color: $text;
-    #footer-left{
+
+    #footer-left {
         display: flex;
         flex-direction: column;
         flex-flow: column wrap;
         padding: 0 1rem;
+
         #contact-info {
             display: flex;
             flex-direction: column;
             flex: 1;
-            h2{
+
+            h2 {
                 font-size: 1.4rem;
                 margin: 0.5rem auto;
                 text-align: center;
             }
-            ul{
+
+            ul {
                 list-style-type: none;
                 margin-top: 0.5rem;
                 word-break: break-word;
-                li{
+
+                li {
                     list-style: none;
                     color: $text;
                     font-size: 0.9rem;
-                    margin-top: rem;
-                    
-                    a{
+                    margin-top: 0.4rem;
+
+                    a {
                         text-decoration: none;
                         color: $text;
-                        &:hover{
+
+                        &:hover {
                             color: $icons;
                         }
-                        &:active{
+
+                        &:active {
                             color: $text;
                         }
                     }
                 }
             }
-        } 
-    } 
+        }
+    }
+
     #contact-form {
         display: flex;
         flex-direction: column;
         align-items: left;
         flex-flow: column wrap;
         padding: 0.5rem;
+
         #contact-title {
             color: $text;
             text-align: center;
         }
-        form{
-            input[type=text]{
+
+        form {
+            input[type=text] {
                 height: 1.5rem;
             }
-            input[textarea]{
+
+            input[textarea] {
                 height: 1.5rem;
                 resize: none;
             }
-            input[type=email]{
+
+            input[type=email] {
                 height: 1.5rem;
             }
-            .row{
+
+            .row {
                 display: flex;
                 margin-top: 1rem;
-                .col-25{
+
+                .col-25 {
                     @include flex;
                     justify-content: right;
                     flex: 1;
                     margin: 0 1rem 0 0;
                 }
-                .col-75{
+
+                .col-75 {
                     @include flex;
                     flex: 1;
                     justify-content: left;
                 }
             }
-            .submit-button{
+
+            .submit-button {
                 margin: 1rem auto;
                 width: 100%;
                 text-align: center;
-                input[type=submit]{
+
+                input[type=submit] {
                     background-color: #1e1e1e;
                     color: $text;
-                    &:hover{
+
+                    &:hover {
                         background-color: $snow;
                         color: #161616;
                     }
-                    
+
                 }
-                
+
             }
         }
     }
-    #footer-right{
+
+    #footer-right {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -379,423 +453,523 @@ footer{
         word-break: break-word;
         color: $text;
         padding: 0 1rem;
-        #requested{
+
+        #requested {
             font-size: 2.3rem;
-            i{
+
+            i {
                 color: $icons;
             }
         }
-        
+
     }
 }
-@media screen and (max-width: 992px){
-    header{
+
+@media screen and (max-width: 992px) {
+    header {
         flex-direction: column;
         padding: 0.4rem 0;
-        #logo{
+
+        #logo {
             font-size: 2rem;
         }
     }
-    main{
+
+    main {
         margin-top: 4rem;
-        #intro{
-            #main-box-left{
-                    margin-top: 1rem;
-                    width: 30%;
+
+        #intro {
+            #main-box-left {
+                margin-top: 1rem;
+                width: 30%;
             }
-            #main-box-right{
+
+            #main-box-right {
                 margin-top: 0rem;
-                h2{
+
+                h2 {
                     font-size: 2.5rem;
                 }
-                p{
+
+                p {
                     font-size: 1.5rem;
                     margin-bottom: 1rem;
                 }
-                #button{
+
+                #button {
                     font-size: 0.8rem;
                 }
-                .social{
+
+                .social {
                     margin-top: 0.8rem;
-                    .social-network{
-                        a{
-                            i{
+
+                    .social-network {
+                        a {
+                            i {
                                 font-size: 1.5rem;
                             }
                         }
                     }
                 }
-                
+
             }
         }
-        #box-container-upper-heading{ 
+
+        #box-container-upper-heading {
             text-align: center;
             font-size: 1.2rem;
-            margin-bottom: 1.5rem; 
+            margin-bottom: 1.5rem;
             scroll-margin-top: 8rem;
         }
-        #box-container-upper{
-            .box{
-                .seo-class{
+
+        #box-container-upper {
+            .box {
+                .seo-class {
                     font-size: 0.9rem;
                 }
-                i{
+
+                i {
                     font-size: 3.1rem;
                 }
-                h3{
+
+                h3 {
                     margin-top: 0.8rem;
                     font-size: 1.1rem;
                 }
-                p{
+
+                p {
                     margin-top: 0.8rem;
                     font-size: 0.8rem;
                 }
             }
         }
-        #box-container-lower{
-            .box{
-                h3{
+
+        #box-container-lower {
+            .box {
+                h3 {
                     font-size: 1rem;
                 }
-                p{
+
+                p {
                     margin-top: 0.8rem;
                     font-size: 0.8rem;
                 }
+
                 margin: 1.2rem 0;
             }
-            .second{
-                .project-box{
+
+            .second {
+                .project-box {
                     margin: 2rem 0.2rem;
-                    img{
+
+                    img {
                         width: 100%;
                         border-radius: 0.8rem;
                         height: 130%;
                     }
                 }
             }
-            .skills{
+
+            .skills {
                 margin: 0.7rem 0 0;
                 width: 85%;
-                
+
             }
-            .skill{
+
+            .skill {
                 margin-left: 2.8rem;
             }
-            .skill-name{
+
+            .skill-name {
                 font-size: 0.7rem;
                 font-weight: 500;
                 margin: 0.5rem 0 0.2rem 0;
             }
-            .skill-bar{
+
+            .skill-bar {
                 height: 0.5rem;
                 border-radius: 0.13rem;
             }
-            .first-per{
+
+            .first-per {
                 max-width: 90%;
             }
-            .second-per{
+
+            .second-per {
                 max-width: 79%;
             }
-            .third-per{
+
+            .third-per {
                 max-width: 87%;
             }
-            .fourth-per{
+
+            .fourth-per {
                 max-width: 91%;
             }
-            .skill-per{
+
+            .skill-per {
                 height: 0.5rem;
             }
         }
     }
-    footer{
-        #footer-left{
+
+    footer {
+        #footer-left {
             margin-top: 1rem;
+
             #contact-info {
                 display: flex;
                 flex-direction: column;
-                h2{
+
+                h2 {
                     font-size: 0.8rem;
                     margin: 0.5rem auto;
                     text-align: center;
                 }
-                ul{
-                    li{
+
+                ul {
+                    li {
                         font-size: 0.8rem;
                     }
-                   
-                    
+
+
                 }
             }
         }
-        #contact-form{
+
+        #contact-form {
             #contact-title {
                 font-size: 1rem;
             }
-            form{
-                input[type=text]{
+
+            form {
+                input[type=text] {
                     height: 1rem;
                 }
-                input[textarea]{
+
+                input[textarea] {
                     height: 1rem;
                     resize: none;
                 }
-                input[type=email]{
+
+                input[type=email] {
                     height: 1rem;
                 }
-                .row{
+
+                .row {
                     margin-top: 0.7rem;
-                    .col-25{
+
+                    .col-25 {
                         margin: 0 0.7rem 0 0;
                     }
-                    .col-75{
+
+                    .col-75 {
                         justify-content: left;
                     }
                 }
-                .submit-button{
+
+                .submit-button {
                     margin: 0.8rem auto;
                     width: 100%;
                 }
-            }    
+            }
         }
-        #footer-right{
+
+        #footer-right {
             margin-top: 2.2rem;
-            #requested{
+
+            #requested {
                 font-size: 2rem;
             }
-            i{
+
+            i {
                 font-size: 1.7rem;
             }
-            p{
+
+            p {
                 margin-top: 1rem;
             }
         }
     }
 }
-@media screen and (max-width: 802px){
-    header{
+
+@media screen and (max-width: 802px) {
+    header {
         flex-direction: column;
-        #logo{
+
+        #logo {
             font-size: 1.6rem;
         }
-        nav{
-            ul{
-                li{
+
+        nav {
+            ul {
+                li {
                     font-size: 0.8rem;
                 }
             }
         }
     }
-    main{
+
+    main {
         margin-top: 1rem;
-        #intro{
-            #main-box-left{
-                    margin-top: 1rem;
-                    width: 30%;
+
+        #intro {
+            #main-box-left {
+                margin-top: 1rem;
+                width: 30%;
             }
-            #main-box-right{
-                h2{
+
+            #main-box-right {
+                h2 {
                     font-size: 1.5rem;
                 }
-                p{
+
+                p {
                     font-size: 1rem;
                     margin-bottom: 0.5rem;
                 }
-                #button{
+
+                #button {
                     font-size: 0.67rem;
                 }
-                .social{
+
+                .social {
                     margin-top: 0.6rem;
-                    .social-network{
-                        a{
-                            i{
+
+                    .social-network {
+                        a {
+                            i {
                                 font-size: 1.3rem;
                             }
                         }
                     }
                 }
-                
+
             }
         }
-        #box-container-upper-heading{ 
+
+        #box-container-upper-heading {
             text-align: center;
             font-size: 0.8rem;
-            margin-bottom: 1.2rem; 
+            margin-bottom: 1.2rem;
             scroll-margin-top: 5rem;
         }
-        #box-container-upper{
-            .box{
+
+        #box-container-upper {
+            .box {
                 width: 24%;
-                .seo-class{
+
+                .seo-class {
                     font-size: 0.8rem;
                 }
-                i{
+
+                i {
                     font-size: 2.7rem;
                 }
-                h3{
+
+                h3 {
                     margin-top: 0.7rem;
                     font-size: 0.9rem;
                 }
-                p{
+
+                p {
                     margin-top: 0.8rem;
                     font-size: 0.7rem;
                 }
             }
         }
-        #box-container-lower{
-            .box{
+
+        #box-container-lower {
+            .box {
                 width: 41%;
-                h3{
+
+                h3 {
                     font-size: 0.8rem;
                 }
-                p{
+
+                p {
                     margin-top: 0.7rem;
                     font-size: 0.7rem;
                 }
+
                 margin: 1rem 0;
             }
-            .second{
-                .project-box{
+
+            .second {
+                .project-box {
                     margin: 2rem 0.2rem;
-                    img{
+
+                    img {
                         width: 100%;
                         border-radius: 0.6rem;
                         height: 130%;
                     }
                 }
             }
-            .skills{
+
+            .skills {
                 margin: 0.6rem 0 0;
                 width: 85%;
-                
+
             }
-            .skill{
+
+            .skill {
                 margin-left: 2.8rem;
             }
-            .skill-name{
+
+            .skill-name {
                 font-size: 0.5rem;
                 font-weight: 500;
                 margin: 0.4rem 0 0.2rem 0;
             }
-            .skill-bar{
+
+            .skill-bar {
                 height: 0.4rem;
                 border-radius: 0.13rem;
             }
-            .skill-per{
+
+            .skill-per {
                 height: 0.4rem;
             }
-            .first-per{
+
+            .first-per {
                 max-width: 90%;
             }
-            .second-per{
+
+            .second-per {
                 max-width: 79%;
             }
-            .third-per{
+
+            .third-per {
                 max-width: 87%;
             }
-            .fourth-per{
+
+            .fourth-per {
                 max-width: 91%;
             }
         }
     }
-    footer{
+
+    footer {
         display: flex;
-        #footer-left{
-            padding: 0;;
+
+        #footer-left {
+            padding: 0;
+            ;
             margin: 0.7rem auto;
-            #contact-info{
-                ul{
+
+            #contact-info {
+                ul {
                     margin: 0;
-                    
-                    li{
+
+                    li {
                         font-size: 0.7rem;
                         margin-top: 0.5rem;
                         word-wrap: break-all;
                     }
-                   
-                    
+
+
                 }
             }
         }
-        #contact-form{
+
+        #contact-form {
             align-items: left;
-            #contact-title{
-                h2{
+
+            #contact-title {
+                h2 {
                     font-size: 0.7rem;
                 }
             }
-            form{
-                input[type=text]{
+
+            form {
+                input[type=text] {
                     height: 0.7rem;
                     font-size: 0.7rem;
                 }
-                textarea{
+
+                textarea {
                     height: 2rem;
                     resize: none;
                     font-size: 0.7rem;
                 }
-                input[type=email]{
+
+                input[type=email] {
                     height: 0.7rem;
                     font-size: 0.7rem;
                 }
-                .row{
+
+                .row {
                     margin-top: 0.6rem;
-                    
+
                     font-size: 0.7rem;
-                    .col-25{
+
+                    .col-25 {
                         margin: 0 0.7rem 0 0;
                         font-size: 0.7rem;
                     }
-                    .col-75{
+
+                    .col-75 {
                         justify-content: left;
                         font-size: 0.7rem;
                     }
                 }
-                .submit-button{
+
+                .submit-button {
                     margin: 0.6rem auto;
                     width: 100%;
                 }
-            }    
+            }
         }
-        #footer-right{
+
+        #footer-right {
             margin: 0.5rem auto;
-            i{
+
+            i {
                 font-size: 1.5rem;
             }
-            p{
+
+            p {
                 margin-top: 0.8rem;
                 font-size: 0.7rem;
             }
         }
     }
 }
-@media screen and (max-width: 652px){
-    header{
-        #logo{
+
+@media screen and (max-width: 652px) {
+    header {
+        #logo {
             font-size: 1.5rem;
         }
-        nav{
-            ul{
-                li{
+
+        nav {
+            ul {
+                li {
                     font-size: 0.69rem;
                 }
             }
         }
     }
 }
-@media screen and (max-width: 600px){
-    header{
+
+@media screen and (max-width: 600px) {
+    header {
         padding: 0.3rem 0;
-        #logo{
+
+        #logo {
             display: block;
             font-size: 2rem;
             margin: 0 auto;
         }
-        nav{
+
+        nav {
             display: block;
             width: 40%;
             margin: 0 auto;
-            ul{
-                li{
+
+            ul {
+                li {
                     display: block;
                     font-size: 0.7rem;
                     text-align: center;
@@ -804,41 +978,51 @@ footer{
             }
         }
     }
-    main{
+
+    main {
         width: 100%;
         padding-top: 4rem;
-        #intro{
-            #main-box-left{
+
+        #intro {
+            #main-box-left {
                 width: 25%;
                 margin-top: 5rem;
             }
-            #main-box-right{
+
+            #main-box-right {
                 @extend #main-box-left;
                 width: 55%;
-                h2{
+
+                h2 {
                     font-size: 1.8rem;
                 }
-                p{
+
+                p {
                     font-size: 1rem;
                     margin-bottom: 0.5rem;
-                    .web-color{
-                        color:$web-color;
+
+                    .web-color {
+                        color: $web-color;
                     }
                 }
-                #button{
+
+                #button {
                     font-size: 0.6em;
                     padding: 0.2rem;
                     border-radius: 0.2rem;
                 }
-                .social{
+
+                .social {
                     margin-top: 0.5rem;
                     width: 30%;
                     display: flex;
                     justify-content: space-evenly;
-                    .social-network{
+
+                    .social-network {
                         a {
                             margin: 0;
-                            i{
+
+                            i {
                                 font-size: 1.2rem;
                             }
                         }
@@ -846,197 +1030,240 @@ footer{
                 }
             }
         }
-        #box-container-upper-heading{   
+
+        #box-container-upper-heading {
             scroll-margin-top: 6.2rem;
             width: 100%;
             font-size: 0.8rem;
             margin: 1.2rem auto 1rem;
         }
-        #box-container-upper{
+
+        #box-container-upper {
             display: block;
             width: 100%;
             color: $icons;
-            .box{
+
+            .box {
                 width: 85%;
                 margin: 0 auto 1rem;
                 padding: 1rem;
                 border-radius: 0.5rem;
                 box-shadow: 0.03rem 0.01rem 0.1rem $snow;
-                i{
+
+                i {
                     font-size: 2.75rem;
                 }
-                h3{
+
+                h3 {
                     margin-top: 0.5rem;
                     font-size: 1.05rem;
                 }
-                p{
+
+                p {
                     margin-top: 0.5rem;
                     font-size: 0.8rem;
                     text-align: justify;
                 }
-                .seo-class{
+
+                .seo-class {
                     font-size: 0.9rem;
                 }
             }
-            
+
         }
-        #box-container-lower{
+
+        #box-container-lower {
             scroll-margin-top: 4.5rem;
             display: block;
             width: 100%;
-            .box{
+
+            .box {
                 width: 85%;
                 box-shadow: 0.031rem 0.02rem 0.1rem $snow;
                 padding: 1rem;
                 margin: 0 auto 1rem;
                 border-radius: 0.5rem;
                 font-size: 1rem;
-                h3{
+
+                h3 {
                     text-align: center;
                 }
-                p{
+
+                p {
                     text-align: justify;
                     margin-top: 0.8rem;
                     text-indent: 10%;
                 }
-                
-                
+
+
             }
-            .second{
+
+            .second {
                 display: block;
-                .project-box{
+
+                .project-box {
                     display: block;
                     margin: 0.5rem auto;
-                    img{
+
+                    img {
                         width: 100%;
                         border-radius: 0.3rem;
                         box-shadow: 0.031rem 0.01rem 0.1rem $snow;
                     }
                 }
             }
-            .skills{
+
+            .skills {
                 display: block;
                 width: 90%;
                 margin: 0 auto;
             }
-            .skill{
+
+            .skill {
                 margin: 0 auto;
             }
-            .skill-name{
+
+            .skill-name {
                 font-size: 0.7rem;
                 font-weight: 500;
                 color: $text;
                 margin: 0.5rem 0 0.1rem 0;
             }
-            .skill-bar{
+
+            .skill-bar {
                 height: 0.4rem;
                 border-radius: 0.15rem;
             }
-            .first-per{
+
+            .first-per {
                 max-width: 90%;
             }
-            .second-per{
+
+            .second-per {
                 max-width: 79%;
             }
-            .third-per{
+
+            .third-per {
                 max-width: 87%;
             }
-            .fourth-per{
+
+            .fourth-per {
                 max-width: 91%;
             }
-            .skill-per{
+
+            .skill-per {
                 height: 0.4rem;
                 border-radius: 0.15rem;
                 position: relative;
                 z-index: 0;
                 animation: fillBars 3s infinite;
-                @keyframes fillBars{
-                    from{
+
+                @keyframes fillBars {
+                    from {
                         width: 0;
                     }
-                    to{
+
+                    to {
                         width: 100%;
                     }
                 }
             }
-            
+
         }
     }
-    footer{
+
+    footer {
         display: block;
         margin: 0 auto;
-        #footer-left{
+
+        #footer-left {
             width: 80%;
+
             #contact-info {
                 display: flex;
                 flex-direction: column;
-                h2{
+
+                h2 {
                     font-size: 0.8rem;
                     margin: 0.5rem auto;
                     text-align: center;
                 }
-                ul{
+
+                ul {
                     word-break: break-word;
                     margin-top: 0rem;
-                    li{
+
+                    li {
                         list-style: none;
                         font-size: 0.7rem;
                         margin-top: 0.2rem;
                         text-align: center;
                     }
                 }
-            } 
-        } 
+            }
+        }
+
         #contact-form {
             display: block;
             width: 70%;
             margin: 1rem auto 0;
+
             #contact-title {
-                h2{
+                h2 {
                     color: $text;
                     font-size: 0.8rem;
-                } 
+                }
             }
-            form{
+
+            form {
                 display: flex;
                 flex-direction: column;
-                input[type=text]{
+
+                input[type=text] {
                     height: 0.9rem;
                 }
-                input[textarea]{
+
+                input[textarea] {
                     height: 0.9rem;
                     resize: none;
                 }
-                input[type=email]{
+
+                input[type=email] {
                     height: 0.9rem;
                 }
-                .row{
+
+                .row {
                     display: flex;
-                flex-direction: column;
+                    flex-direction: column;
                     margin-top: 0.5rem;
-                    .col-25{
+
+                    .col-25 {
                         @include flex;
                         justify-content: center;
                         flex: 1;
                         margin: 0 1rem 0 0;
                     }
-                    .col-75{
+
+                    .col-75 {
                         @include flex;
                         flex: 1;
                         justify-content: center;
                     }
                 }
-                .submit-button{
+
+                .submit-button {
                     margin: 0.5rem auto;
                     width: 100%;
                     text-align: center;
-                    input[type=submit]{
+
+                    input[type=submit] {
                         font-size: 0.8rem;
                     }
                 }
             }
         }
-        #footer-right{
+
+        #footer-right {
             width: 70%;
             display: flex;
             flex-direction: column;
@@ -1044,17 +1271,20 @@ footer{
             word-break: break-word;
             margin: 0 auto 0;
             padding-bottom: 2rem;
-            #requested{
+
+            #requested {
                 font-size: 2rem;
-                i{
+
+                i {
                     color: $icons;
                 }
-                
+
             }
-            p{
+
+            p {
                 margin: 0;
             }
-            
+
         }
     }
 }
